@@ -1,4 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{QUERY_STRING} ^color=(.*)$
-RewriteRule ^(.*)\.(svg)$ svg.php?imagem=$1\.$2 [QSA]
