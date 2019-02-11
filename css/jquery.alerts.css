@@ -1,0 +1,21 @@
+#popup_container {font-size: 12px; max-width: 600px; width: 100%; background: #FFF; color: #000; position: fixed; left: calc(50% - 300px);}
+
+#popup_title {font-size: 14px; text-align: center; line-height: 1.75em; background:#f05736; color:#fff; font-weight:700; margin: 0; padding: 5px 0;}
+
+#popup_content {padding: 1em 1.75em; margin: 0;}
+
+#popup_content.alert {}
+
+#popup_content.confirm {}
+
+#popup_content.prompt {}
+
+#popup_message {text-align: center;}
+
+#popup_panel {text-align: center; margin: 10px 0 0;}
+
+#popup_panel input {display: inline-block; background-color: #f05736; border: 0; padding: 3px 10px; color: #fff; cursor: pointer; width: auto;}
+
+#popup_panel input:hover {background: #bd771e;}
+
+#popup_prompt {margin: .5em 0;}
