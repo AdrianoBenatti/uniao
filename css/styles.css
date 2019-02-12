@@ -8,7 +8,7 @@ body, input, textarea {font-family:Arial, Helvetica, sans-serif; font-size:12px;
 img {border:0; vertical-align:middle;}
 a {color:inherit; text-decoration:none;}
 a:hover {text-decoration:none;}
-:focus {outline:0;}
+:focus {outline:0; color: #FF4400; font-size: 16px; font-weight: bold;}
 
 html, #wrapper {height:100%;}
 
@@ -109,7 +109,7 @@ ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
 .ultimo-jogo .centraliza .historia .wrap-fotos { width: 400px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; }
 .ultimo-jogo .centraliza .historia .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 400px;}
 
-.ultimo-jogo .text {  border-radius: 10px;  width: 600px; padding: 50px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 600px; text-align: justify; opacity: 08;}
+.ultimo-jogo .text {  border-radius: 10px;  width: 600px; padding: 50px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 600px; text-align: justify; opacity: 0.8;}
 .ultimo-jogo .text h1 { font-size: 40px; color: #EF580F; font-weight: bold;}
 .ultimo-jogo .text h2 { font-size: 35px; color: #EF580F; font-weight: bold;}
 .ultimo-jogo .text p { font-size: 14px; color: #ff4400; font-weight: bold;}
@@ -122,6 +122,25 @@ ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
 .ultimo-jogo .artilharia .dados .parte1 .jogador .number  { font-size: 16px; color: #EF580F; font-weight: bold; }
 .ultimo-jogo .artilharia .dados .parte2 .jogador .number  { font-size: 16px; color: #EF580F; font-weight: bold; margin: 0 30px;}
 
-.wrap-fotos h2 { font-size: 35px; widows: 300; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; }
+.wrap-fotos h2 { font-size: 35px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8;}
 
+.ultimo-jogo .form { border-radius: 10px; width: 600px; padding: 105px 0; background-color: #e1a15c; border: 2px solid #fb7f36; height: 700px; text-align: justify; margin: 0 auto; opacity: 0.8;}
+.ultimo-jogo .form h2 { font-size: 30px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.ultimo-jogo .form #fContato .campos { width: 255px; display: flex; flex-direction: column; text-align: center;}
+.ultimo-jogo .form #fContato {display: flex; align-items: center; justify-content: space-around; margin: 0 auto; text-align: center; width: 600px; }
+.ultimo-jogo .form #fContato input { color: #FF4400; font-size: 16px; font-weight: bold;}
+.ultimo-jogo .form #fContato textarea { color: #FF4400; font-size: 16px; font-weight: bold;}
+.ultimo-jogo .form .campos input[type="text"], input[type="password"], textarea { height: 45px; margin: 20px; border: 3px solid #FF4400; border-radius: 5px; padding: 10px}
+.ultimo-jogo .form .campos input[type="placeholder"] { height: 45px; margin: 20px; border: 3px solid #FF4400; border-radius: 5px; padding: 10px}
+.ultimo-jogo .form .mensagem { display: flex; flex-direction: column;}
+.ultimo-jogo .form .mensagem textarea { height: 170px; width: 300px; padding: 30px; margin: 30px 0;}
+.ultimo-jogo .form .mensagem input { background: #E1A15C; color: #FF4400; border: 2px solid #FF4400; width: 150px; height: 40px; font-size: 20px; font-weight: bold;  border-radius: 5px;}
+.ultimo-jogo .form .mensagem h3 { font-size: 20px; color: #ff4400; margin: 0; text-align: left;}
+.ultimo-jogo .form .campos ::-webkit-input-placeholder { }
+::-webkit-input-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
+:-moz-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
+::-moz-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
+:-ms-input-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
+.ultimo-jogo .form #fContato label.error { color: #FF4400; font-size: 16px; font-weight: bold;}
 
+.wrap-loading{width: 100%; height: 100%; background: rgba(0, 0, 0, .3) url(../images/loading.gif) center no-repeat; display: none; position: fixed; top: 0; left: 0; z-index: 9999;}

@@ -89,6 +89,7 @@ if(APPLICATION_ENV=='development'){
 <link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/reset/cssfonts-min.css"/>
 <link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/reset/cssbase-min.css"/>
 <link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/owl.carousel.css"/>
+<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/jquery.alerts.css"/>
 
 <script src="<?php echo $url ?>js/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script src="<?php echo $url ?>js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
@@ -101,6 +102,7 @@ if(APPLICATION_ENV=='development'){
 <script src="<?php echo $url ?>js/tools.js" type="text/javascript"></script>
 <script src="<?php echo $url ?>js/jquery.animateNumber.min.js" type="text/javascript"></script>
 <script src="<?php echo $url ?>js/jAlert.min.js" type="text/javascript"></script>
+
 
 
 <script type="text/javascript">
