@@ -2,7 +2,7 @@
 session_start();
 include("admin/functions.php");
 $page = $_GET['page']? $_GET['page']: 'home';
-$url = getConfig('url_site');
+$url = 'http://localhost/uniao/';
 $mediaUrl = $url.'media/';
 if(APPLICATION_ENV=='development'){
     ob_start();
@@ -36,6 +36,8 @@ if(APPLICATION_ENV=='development'){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#5d4332">
 
+	<?php $keywords = 'uniao, futebol, cidade' ?>
+
     <meta name="description" content="<?php echo isset($description) ?  $description : utf8_encode("") ?>" />
     <meta name="keywords" content="<?php echo isset($keywords) ? $keywords : ""; ?>" />
 
@@ -50,7 +52,6 @@ if(APPLICATION_ENV=='development'){
     <title><?php echo isset($title) ? $title."E.C. União Santa Luiza" : "E.C. União Santa Luiza"; ?></title>
     <link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
     <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
-    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
 
 
     <!--    --><?php //echo $configuracoes['analytics'] ?>
@@ -84,14 +85,8 @@ if(APPLICATION_ENV=='development'){
 </div>
 
 
-<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/colorbox.css"/>
-<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/reset/cssreset-min.css"/>
-<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/reset/cssfonts-min.css"/>
-<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/reset/cssbase-min.css"/>
-<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/owl.carousel.css"/>
-<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/jquery.alerts.css"/>
 
-<script src="<?php echo $url ?>js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="<?php echo $url ?>js/jquery-1.11.0.min.js" type="text/javascript"></script>
 <script src="<?php echo $url ?>js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 
 <script src="<?php echo $url ?>js/jquery.colorbox-min.js" type="text/javascript"></script>
@@ -101,7 +96,16 @@ if(APPLICATION_ENV=='development'){
 <script src="<?php echo $url ?>js/owl.carousel.min.js" type="text/javascript"></script>
 <script src="<?php echo $url ?>js/tools.js" type="text/javascript"></script>
 <script src="<?php echo $url ?>js/jquery.animateNumber.min.js" type="text/javascript"></script>
-<script src="<?php echo $url ?>js/jAlert.min.js" type="text/javascript"></script>
+<script src="<?php echo $url ?>js/jalert.min.js" type="text/javascript"></script>
+
+
+<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/colorbox.css"/>
+<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/reset/cssreset-min.css"/>
+<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/reset/cssfonts-min.css"/>
+<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/reset/cssbase-min.css"/>
+<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/owl.carousel.css"/>
+<link property="stylesheet" rel="stylesheet" type="text/css" media="all" href="<?php echo $url ?>css/jquery.alerts.css"/>
+
 
 
 

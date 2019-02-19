@@ -1,3 +1,4 @@
+
 <script>
 	$(function () {
 		$("#fContato").validate({
@@ -5,16 +6,15 @@
 				$('#valida').val('validado');
 				$('.wrap-loading').show();
 				$.post(url + "ajax/envia-contato.php", $(form).serialize(), function (data) {
-					console.log(data);
-
 					$('.wrap-loading').hide();
-					if (data == '1') {
-						mensagem = "Enviado com sucesso!";
-						classe = "Sucesso";
-					} else {
+					if (data != '1') {
 						mensagem = "Erro enviar e-mail";
 						classe = "Erro";
+					} else {
+						mensagem = "Enviado com sucesso!";
+						classe = "Sucesso";
 					}
+
 
 					jAlert(mensagem, classe);
 
@@ -50,7 +50,7 @@
 
 		<form action="javascript:;" id="fContato" method="post">
 			<input type="hidden" name="valida" id="valida"/>
-			<input type="hidden" name="url" value="http://localhost/uniao/">
+			<input type="hidden" name="url" value="<?php echo $url ?>">
 
 			<div class="campos">
 				<input type="text" name="nome" placeholder="Nome">
@@ -66,6 +66,7 @@
 			</div>
 
 		</form>
+
 	</div>
 
 </div>

@@ -66,13 +66,13 @@ $head_empresa = "<strong>Ol&aacute;</strong>, {$nome} ";
 $mail = new PHPMailer();
 
 $mail->IsSMTP();
-#$mail->SMTPDebug = 3;
+$mail->SMTPDebug = 1;
 $mail->SMTPAuth = true;
 $mail->Port = 587;
 $mail->SMTPSecure = 'tls';
-$mail->Host = 'mail.aptaweb.net';
-$mail->Username = "uniaosantaluiza@gmail.com";
-$mail->Password = "futebol321";
+$mail->Host = 'smtp.gmail.com';
+$mail->Username = "thisdedd@gmail.com";
+$mail->Password = "Mario321";
 $mail->From =  'uniaosantaluiza@gmail.com';
 $mail->FromName = 'Esporte Clube - União Santa Luiza';
 
