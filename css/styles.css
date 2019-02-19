@@ -144,3 +144,21 @@ ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
 .ultimo-jogo .form #fContato label.error { color: #FF4400; font-size: 16px; font-weight: bold;}
 
 .wrap-loading{width: 100%; height: 100%; background: rgba(0, 0, 0, .3) url(../images/loading.gif) center no-repeat; display: none; position: fixed; top: 0; left: 0; z-index: 9999;}
+
+@media screen and (max-width: 700px){
+
+	.links { display: none;}
+
+	.header .menu #menu-mobile{ display: none;}
+	.header .menu #menu-mobile.active { display: block; position: absolute; left: 0; top: 100%; z-index: 2; width: 100%; background-color: #ffffff; }
+	.header .menu #menu-mobile.active a { font-size: 18px; margin: 1px 20px; display: flex;}
+
+
+	.click_mobile.active { display: none;}
+	.click_mobile.voltar { display: block;}
+	.close {display: none;}
+	.close.active { display: block;}
+	.click_mobile img { position: absolute; right: 3%; top: 75%;}
+	.close img { position: absolute; right: 3%; top: 75%;}
+
+}
