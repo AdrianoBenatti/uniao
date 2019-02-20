@@ -62,7 +62,9 @@
 
 			<a href="<?php echo $url. "artilheiros"?>">Artilheiros</a>
 
-            <a href="<?php echo $url. "gols"?>">Gols</a>
+			<a href="<?php echo $url. "fotos"?>">Fotos</a>
+
+			<a href="<?php echo $url. "gols"?>">Gols</a>
 
 			<a href="<?php echo $url. "contato"?>">Contato</a>
 

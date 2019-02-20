@@ -98,8 +98,14 @@ ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
 .ultimo-jogo .contador #number { font-size: 190px; color: #ff5600; font-family: 'Baloo Thambi', cursive;}
 .ultimo-jogo .contador { position: absolute; left: 28%; top: 24%; width: 600px; padding: 10px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 400px; opacity: 0.7; }
 .ultimo-jogo .centraliza { padding: 50px; text-align: center; padding: 50px; margin: 0 auto; width: 1324px; display: flex; justify-content: space-between; }
+.ultimo-jogo .centraliza .jogo-anterior p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
+.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 30px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.ultimo-jogo .centraliza .prox-jogo p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
+.ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 
-.ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; }
+
+
+.ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 200px 0; margin: 0 auto; text-align: center; }
 .ultimo-jogo .centraliza .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 900px;}
 .ultimo-jogo .centraliza .wrap-carousel img { width: 100%; height: 285px; padding: 0 12px;}
 .ultimo-jogo .centraliza .wrap-carousel .seta.seta_esq { position: absolute; top: 30%; left: -13%; z-index: 5; font-size: 80px; color: #ef580f;}
@@ -144,6 +150,9 @@ ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
 .ultimo-jogo .form #fContato label.error { color: #FF4400; font-size: 16px; font-weight: bold;}
 
 .wrap-loading{width: 100%; height: 100%; background: rgba(0, 0, 0, .3) url(../images/loading.gif) center no-repeat; display: none; position: fixed; top: 0; left: 0; z-index: 9999;}
+
+.topnav { display: none;}
+
 
 @media screen and (max-width: 700px){
 
