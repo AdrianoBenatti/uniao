@@ -1,6 +1,8 @@
 <div class="banner"></div>
+<div class="banner-mobile"></div>
 
 
+<div class="home">
 <div class="ultimo-jogo">
 
 
@@ -36,4 +38,5 @@
 	</div>
 
 
+</div>
 </div>
