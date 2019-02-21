@@ -106,6 +106,7 @@
 
 </script>
 
+<div class="artilheiros">
 
 <div class="ultimo-jogo">
 
@@ -188,3 +189,4 @@
 
 </div>
 
+</div>

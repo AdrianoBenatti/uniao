@@ -20,7 +20,7 @@ $(function(){
 	});
 </script>
 
-
+<div class="historia">
 	<div class="ultimo-jogo">
 
 		<div class="centraliza">
@@ -77,5 +77,5 @@ Primeiro haitiano a jogar no clube Joanes Etienne.
 
 </div>
 
-
+</div>
 

@@ -22,8 +22,11 @@
 		var carousel = $('.carousel');
 
 		carousel.owlCarousel({
-			items:3,
-			smartSpeed:500
+			items:1,
+			smartSpeed:500,
+			701 : {
+				items:3,
+			}
 		});
 		carousel.on('changed.owl.carousel', function(property){
 			var current = property.item.index + 1;

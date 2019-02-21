@@ -42,6 +42,8 @@
 
 <div class="wrap-loading"></div>
 
+<div class="formulario">
+
 <div class="ultimo-jogo">
 
 	<div class="form">
@@ -71,5 +73,5 @@
 
 </div>
 
-
+</div>
 
