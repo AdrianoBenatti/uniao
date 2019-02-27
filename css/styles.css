@@ -8,7 +8,7 @@ body, input, textarea {font-family:Arial, Helvetica, sans-serif; font-size:12px;
 img {border:0; vertical-align:middle;}
 a {color:inherit; text-decoration:none;}
 a:hover {text-decoration:none;}
-:focus {outline:0;}
+:focus {outline:0; color: #FF4400; font-size: 16px; font-weight: bold;}
 
 html, #wrapper {height:100%;}
 
@@ -30,38 +30,6 @@ body > #wrapper {height:auto; min-height:100%; margin:0; font-family: 'Hind Madu
 
 h1,h2,h3,h4,h5,h6 {font-weight:300;}
 
-ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
-.wrap.error404 {padding: 50px;}
-
-.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
-.col-lg-10, .col-lg-11, .col-lg-12, .col-lg-13, .col-lg-14, .col-lg-15, .col-lg-16, .col-lg-17,
-.col-lg-18, .col-lg-19, .col-lg-20, .col-lg-21, .col-lg-22, .col-lg-23, .col-lg-24, .col-lg-25{min-height:1px;position:relative;padding-right:20px;float:left;margin:0 0 20px;}
-.col-lg-25{width:100%;}
-.col-lg-24{width:96%;}
-.col-lg-23{width:92%;}
-.col-lg-22{width:88%;}
-.col-lg-21{width:84%;}
-.col-lg-20{width:80%;}
-.col-lg-19{width:76%;}
-.col-lg-18{width:72%;}
-.col-lg-17{width:68%;}
-.col-lg-16{width:64%;}
-.col-lg-15{width:60%;}
-.col-lg-14{width:56%;}
-.col-lg-13{width:52%;}
-.col-lg-12{width:48%;}
-.col-lg-11{width:44%;}
-.col-lg-10{width:40%;}
-.col-lg-9{width:36%;}
-.col-lg-8{width:32%;}
-.col-lg-7{width:28%;}
-.col-lg-6{width:24%;}
-.col-lg-5{width:20%;}
-.col-lg-4{width:16%;}
-.col-lg-3{width:12%;}
-.col-lg-2{width:8%;}
-.col-lg-1{width:4%;}
-.col-last{padding:0;}
 
 
 .header { background-color: #fb7f36; width: 100%; height: 85px;  position: fixed; top: 0; bottom: 0; z-index: 1;  }
@@ -98,9 +66,15 @@ ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
 .ultimo-jogo .contador #number { font-size: 190px; color: #ff5600; font-family: 'Baloo Thambi', cursive;}
 .ultimo-jogo .contador { position: absolute; left: 28%; top: 24%; width: 600px; padding: 10px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 400px; opacity: 0.7; }
 .ultimo-jogo .centraliza { padding: 50px; text-align: center; padding: 50px; margin: 0 auto; width: 1324px; display: flex; justify-content: space-between; }
+.ultimo-jogo .centraliza .jogo-anterior p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
+.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 30px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.ultimo-jogo .centraliza .prox-jogo p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
+.ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 
-.ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; }
-.ultimo-jogo .centraliza .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 900px;}
+
+
+.ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 200px 0; margin: 0 auto; text-align: center; }
+.ultimo-jogo .centraliza .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 500px;}
 .ultimo-jogo .centraliza .wrap-carousel img { width: 100%; height: 285px; padding: 0 12px;}
 .ultimo-jogo .centraliza .wrap-carousel .seta.seta_esq { position: absolute; top: 30%; left: -13%; z-index: 5; font-size: 80px; color: #ef580f;}
 .ultimo-jogo .centraliza .wrap-carousel .seta.seta_dir { position: absolute; top: 30%; right: -13%; z-index: 5; font-size: 80px; color: #ef580f;}
@@ -109,7 +83,7 @@ ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
 .ultimo-jogo .centraliza .historia .wrap-fotos { width: 400px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; }
 .ultimo-jogo .centraliza .historia .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 400px;}
 
-.ultimo-jogo .text {  border-radius: 10px;  width: 600px; padding: 50px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 600px; text-align: justify; opacity: 08;}
+.ultimo-jogo .text {  border-radius: 10px;  width: 600px; padding: 50px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 600px; text-align: justify; opacity: 0.8;}
 .ultimo-jogo .text h1 { font-size: 40px; color: #EF580F; font-weight: bold;}
 .ultimo-jogo .text h2 { font-size: 35px; color: #EF580F; font-weight: bold;}
 .ultimo-jogo .text p { font-size: 14px; color: #ff4400; font-weight: bold;}
@@ -122,6 +96,96 @@ ul, li {list-style:none;} fieldset {border:0;} textarea {resize:none;}
 .ultimo-jogo .artilharia .dados .parte1 .jogador .number  { font-size: 16px; color: #EF580F; font-weight: bold; }
 .ultimo-jogo .artilharia .dados .parte2 .jogador .number  { font-size: 16px; color: #EF580F; font-weight: bold; margin: 0 30px;}
 
-.wrap-fotos h2 { font-size: 35px; widows: 300; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; }
+.wrap-fotos h2 { font-size: 35px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8;}
+
+.ultimo-jogo .form { border-radius: 10px; width: 600px; padding: 105px 0; background-color: #e1a15c; border: 2px solid #fb7f36; height: 700px; text-align: justify; margin: 0 auto; opacity: 0.8;}
+.ultimo-jogo .form h2 { font-size: 30px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.ultimo-jogo .form #fContato .campos { width: 255px; display: flex; flex-direction: column; text-align: center;}
+.ultimo-jogo .form #fContato {display: flex; align-items: center; justify-content: space-around; margin: 0 auto; text-align: center; width: 600px; }
+.ultimo-jogo .form #fContato input { color: #FF4400; font-size: 16px; font-weight: bold;}
+.ultimo-jogo .form #fContato textarea { color: #FF4400; font-size: 16px; font-weight: bold;}
+.ultimo-jogo .form .campos input[type="text"], input[type="password"], textarea { height: 45px; margin: 20px; border: 3px solid #FF4400; border-radius: 5px; padding: 10px}
+.ultimo-jogo .form .campos input[type="placeholder"] { height: 45px; margin: 20px; border: 3px solid #FF4400; border-radius: 5px; padding: 10px}
+.ultimo-jogo .form .mensagem { display: flex; flex-direction: column;}
+.ultimo-jogo .form .mensagem textarea { height: 170px; width: 300px; padding: 30px; margin: 30px 0;}
+.ultimo-jogo .form .mensagem input { background: #E1A15C; color: #FF4400; border: 2px solid #FF4400; width: 150px; height: 40px; font-size: 20px; font-weight: bold;  border-radius: 5px;}
+.ultimo-jogo .form .mensagem h3 { font-size: 20px; color: #ff4400; margin: 0; text-align: left;}
+.ultimo-jogo .form .campos ::-webkit-input-placeholder { }
+::-webkit-input-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
+:-moz-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
+::-moz-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
+:-ms-input-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
+.ultimo-jogo .form #fContato label.error { color: #FF4400; font-size: 16px; font-weight: bold;}
+
+.wrap-loading{width: 100%; height: 100%; background: rgba(0, 0, 0, .3) url(../images/loading.gif) center no-repeat; display: none; position: fixed; top: 0; left: 0; z-index: 9999;}
+
+.topnav { display: none;}
+.banner-mobile { display: none;}
+
+@media screen and (max-width: 700px){
+
+	.banner { display: none;}
+	.links { display: none;}
+	.topnav { display: block;}
+
+	.header .menu #menu-mobile{ display: none;}
+	.header .menu #menu-mobile.active { display: block; position: absolute; left: 0; top: 100%; z-index: 2; width: 100%; background-color: #fb7f36; color: #FFFFFF;}
+	.header .menu #menu-mobile.active a { font-size: 18px; margin: 10px 70px; display: flex; font-weight: bold; text-align: center;}
+
+	.click_mobile.active { display: none;}
+	.click_mobile.voltar { display: block;}
+	.close {display: none;}
+	.close.active { display: block;}
+	.click_mobile img { position: absolute; right: 6%; top: 38%;}
+	.close img { position: absolute; right: 6%; top: 38%;}
+
+	.menu figure img{ margin: 8px 40px;}
+
+	.banner-mobile { background: url("../images/banner-mobile.jpg")top center no-repeat; background-size: cover; width: 100%; height: 250px; display: block; border-bottom: 6px solid #fb7f36;}
+
+	.ultimo-jogo .centraliza { width: 100%; flex-wrap: wrap;}
+	.ultimo-jogo .centraliza .jogo-anterior img { width: 100%}
+	.ultimo-jogo .centraliza .prox-jogo img { width: 100%}
+
+	.home .ultimo-jogo { width: 100%; height: auto;}
+	.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 20px; height: 40px; padding: 6px 43px;}
+	.ultimo-jogo .centraliza .prox-jogo h2 { font-size: 19px; height: 40px; padding: 6px 43px;}
+	.ultimo-jogo .centraliza .prox-jogo p { font-size: 15px;  height: 160px; padding: 5px 11px;}
+	.ultimo-jogo .centraliza .jogo-anterior p { font-size: 15px; height: 160px; padding: 5px 11px; }
+
+	.menu-footer { width: 100%;}
+
+	.ultimo-jogo .text h1 { font-size: 30px;}
+	.ultimo-jogo .text h2 { font-size: 20px;}
+	.ultimo-jogo .text { padding: 10px; height: 800px;}
+	.historia { width: 100%;}
+	.historia .ultimo-jogo { height: 1280px;}
+	.ultimo-jogo .centraliza .historia .wrap-fotos { width: 100%;}
+	.ultimo-jogo .centraliza .historia .wrap-carousel { width: 100%;}
+	.ultimo-jogo .centraliza .wrap-carousel img { width: 75vw; height: 58vw; padding: 0 12px; }
+	.ultimo-jogo .centraliza .wrap-carousel .seta.seta_dir { right: -16%;}
+
+	.wrap-fotos h2 { font-size: 24px; height: 38px; margin: 10px 0; }
+
+	.ultimo-jogo .artilharia { height: 970px;}
+	.artilheiros .ultimo-jogo { height: 1018px;}
+
+	.ultimo-jogo .centraliza .wrap-fotos { width: 100%;}
+	.ultimo-jogo .centraliza .wrap-carousel { width: 100%;}
+
+	.ultimo-jogo .contador { width: 100%; position: inherit;}
+	.ultimo-jogo .contador #number { font-size: 133px;}
+
+	.ultimo-jogo .form h2 { font-size: 27px;}
+	.ultimo-jogo .form #fContato { display: block;}
+	.ultimo-jogo .form #fContato { width: 100%;}
+	.ultimo-jogo .form { width: 100%; height: 950px;}
+
+	.formulario .ultimo-jogo { height: 950px;}
+	.ultimo-jogo .form #fContato .campos { width: 100%;}
+	.ultimo-jogo .form .mensagem textarea { margin: 30px 22px;}
+	.ultimo-jogo .form .mensagem h3 { text-align: center;}
+	.ultimo-jogo .form #fContato input[type=submit] { margin: 0 auto;}
 
 
+}

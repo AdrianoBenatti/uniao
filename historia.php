@@ -9,7 +9,7 @@ $(function(){
 			items:1,
 			smartSpeed:500
 		});
-	
+
 
 		$('.seta_esq').click(function(){
 			carousel.trigger('prev.owl.carousel');
@@ -20,7 +20,7 @@ $(function(){
 	});
 </script>
 
-
+<div class="historia">
 	<div class="ultimo-jogo">
 
 		<div class="centraliza">
@@ -29,7 +29,7 @@ $(function(){
 
 <h1>E.C.  UNIÃO SANTA LUIZA</h1>
 
-<h2>Formado em: 20/3/14</h2>
+<h2>Fundado em: 20/3/14</h2>
 
 <p>
 A ideia de montar um time comecou com o presidente e técnico David N. dos anjos
@@ -66,16 +66,16 @@ Primeiro haitiano a jogar no clube Joanes Etienne.
 
 						<img src="<?php echo $url ?>images/logo1.png" alt="União Esporte Clube" />
 
-						
+
 					</div>
 				</div>
 			</div>
 		</div>
 </div>
-	
-</div>
 
 </div>
 
+</div>
 
+</div>
 
