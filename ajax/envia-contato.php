@@ -24,7 +24,7 @@ $mensagem = "	<html>
 						</head>
 						<body>
 							<p align='center' style=''>
-								<img src='{$url}images/logo.png'>
+								<img src='{$url}/images/logo.png'>
 							</p>
 							<table width='650' border='0' align='center' class='geral'>
 								<tr>
@@ -64,6 +64,8 @@ $head_cliente = "<strong>Ol&aacute; {$nome}</strong>, você ";
 $head_empresa = "<strong>Ol&aacute;</strong>, {$nome} ";
 
 $mail = new PHPMailer();
+$email_time = "uniaosantaluiza@gmail.com";
+
 
 $mail->IsSMTP();
 $mail->SMTPDebug = 1;
@@ -71,28 +73,27 @@ $mail->SMTPAuth = true;
 $mail->Port = 587;
 $mail->SMTPSecure = 'tls';
 $mail->Host = 'smtp.gmail.com';
-$mail->Username = "thisdedd@gmail.com";
-$mail->Password = "Mario321";
+$mail->Username = "uniaosantaluiza@gmail.com";
+$mail->Password = "futebol321";
 $mail->From =  'uniaosantaluiza@gmail.com';
-$mail->FromName = 'Esporte Clube - União Santa Luiza';
+$mail->FromName = 'Esporte Clube União Santa Luiza';
 
 $mail->CharSet = 'UTF-8';
 $mail->IsHTML(true);
-$mail->Subject = 'Esporte Clube - União Santa Luiza';
-$mail->AddReplyTo($email);
+$mail->Subject = 'Esporte Clube União Santa Luiza';
+$mail->AddAddress($email_time);
+
 
 $msg = str_replace("%HEAD%", $head_empresa, $mensagem);
 $mail->Body = $msg;
 $enviado = $mail->Send();
 
-$mail->ClearReplyTos();
-$mail->ClearAllRecipients();
-
-$mail->AddReplyTo("uniaosantaluiza@gmail.com");
+$mail->ClearAddresses();
 $mail->AddAddress($email);
 
 $msg = str_replace("%HEAD%", $head_cliente, $mensagem);
 $mail->Body = $msg;
+
 
 if ($enviado && $mail->Send()){
 	echo "1";

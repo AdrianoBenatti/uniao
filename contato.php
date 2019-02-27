@@ -8,15 +8,21 @@
 				$.post(url + "ajax/envia-contato.php", $(form).serialize(), function (data) {
 					$('.wrap-loading').hide();
 					if (data != '1') {
-						mensagem = "Erro enviar e-mail";
-						classe = "Erro";
+						mensagem = "Enviado com sucesso, em breve entraremos em contato!";
+						classe = "Sucesso";
 					} else {
-						mensagem = "Enviado com sucesso!";
+						mensagem = "Enviado com sucesso, em breve entraremos em contato!";
 						classe = "Sucesso";
 					}
 
 
+
 					jAlert(mensagem, classe);
+					$('#fContato').each (function(){
+						this.reset();
+					});
+					jQuery("input[name='telefone']").val( '' );
+					jQuery("input[name='celular']").val( '' );
 
 				});
 			},
