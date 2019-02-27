@@ -29,7 +29,7 @@ $(function(){
 
 <h1>E.C.  UNIÃO SANTA LUIZA</h1>
 
-<h2>Fundado em: 20/3/14</h2>
+<h2>Fundado em: 20/03/2014</h2>
 
 <p>
 A ideia de montar um time comecou com o presidente e técnico David N. dos anjos

@@ -36,7 +36,7 @@
 			},
 			messages: {
 				nome: "Digite o nome",
-				celular: "Digite o nome",
+				celular: "Digite o celular",
 				email: {
 					required: "Digite o email",
 					email: "informe um email valido"

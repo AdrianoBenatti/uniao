@@ -67,9 +67,9 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .ultimo-jogo .contador { position: absolute; left: 28%; top: 24%; width: 600px; padding: 10px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 400px; opacity: 0.7; }
 .ultimo-jogo .centraliza { padding: 50px; text-align: center; padding: 50px; margin: 0 auto; width: 1324px; display: flex; justify-content: space-between; }
 .ultimo-jogo .centraliza .jogo-anterior p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
-.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 30px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 .ultimo-jogo .centraliza .prox-jogo p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
-.ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 
 
 

@@ -177,7 +177,7 @@
 					<p>Romain Monval</p>
 
 					<div class="number" id="number8"> 9</div>
-					gol<br><br>
+					gols<br><br>
 				</div>
 
 
