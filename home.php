@@ -12,11 +12,12 @@
 
 			<h2>Última apresentação</h2>
 			<figure>
-				<img src="<?php echo $url ?>images/jogos/17.02.19-2.jpeg">
+				<img src="<?php echo $url ?>images/jogos/31.03.19-2.jpeg">
 			</figure>
 			<p>
-				Último jogo do ano para o time do União.<br>
-				O time foi bem porém não conseguiu a tão esperada vitória.<br>
+				Jogo muito complicado, contra o bom time do Alvorada.<br>
+				O time disputou até o final porém com lances<br>
+				duvidosos pela arbitragem acabamos amargando a derrota.<br>
 				Iremos continuar trabalhando para lacnaçar os objetivos.
 			</p>
 		</div>
@@ -25,7 +26,7 @@
 
 			<h2>Próximo compromisso</h2>
 			<figure>
-				<img src="<?php echo $url ?>images/jogos/17.02.19.png">
+				<img src="<?php echo $url ?>images/jogos/14.04.19.jpeg">
 			</figure>
 			<p>
 				Próximo compromisso, contamos com a vitória para nos recuperarmos.<br>

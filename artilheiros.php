@@ -101,6 +101,17 @@
 				}
 			});
 		});
+		$('#number10').each(function () {
+			$(this).prop('Counter', 0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 5000,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+		});
 	});
 
 
@@ -122,38 +133,53 @@
 				<div class="jogador">
 					<p>Felipe Henrike (Felipinho)</p>
 
-					<div class="number" id="number1"> 46</div>
+					<div class="number" id="number1"> 68</div>
 					gols<br><br>
 				</div>
 
 				<div class="jogador">
 					<p>Rafael Daloz</p>
 
-					<div class="number" id="number2"> 32</div>
-					gols<br><br>
-				</div>
-				<div class="jogador">
-					<p>Guilherme Binotte</p>
-
-					<div class="number" id="number4"> 15</div>
+					<div class="number" id="number2"> 40</div>
 					gols<br><br>
 				</div>
 				<div class="jogador">
 					<p>Leonardo Rodolfo (Leo)</p>
 
-					<div class="number" id="number3"> 12</div>
+					<div class="number" id="number3"> 30</div>
+					gols<br><br>
+				</div>
+				<div class="jogador">
+					<p>Guilherme Binotte</p>
+
+					<div class="number" id="number4"> 25</div>
+					gols<br><br>
+				</div>
+				<div class="jogador">
+					<p>Leandro Noronha</p>
+
+					<div class="number" id="number6"> 15</div>
+					gols<br><br>
+				</div>
+
+
+
+			</div>
+
+
+			<div class="parte2">
+				<div class="jogador">
+					<p>Eduardo Pereira (Du)</p>
+
+					<div class="number" id="number7"> 18</div>
 					gols<br><br>
 				</div>
 				<div class="jogador">
 					<p>Elias Vicente (Liu)</p>
 
-					<div class="number" id="number9"> 9</div>
+					<div class="number" id="number9"> 12</div>
 					gols<br><br>
 				</div>
-			</div>
-
-
-			<div class="parte2">
 
 				<div class="jogador">
 					<p>Joanes Etienne</p>
@@ -161,26 +187,13 @@
 					<div class="number" id="number5"> 10</div>
 					gols<br><br>
 				</div>
-				<div class="jogador">
-					<p>Leandro Noronha</p>
 
-					<div class="number" id="number6"> 10</div>
+				<div class="jogador">
+					<p>Roni</p>
+
+					<div class="number" id="number10"> 10</div>
 					gols<br><br>
 				</div>
-				<div class="jogador">
-					<p>Eduardo Pereira (Du)</p>
-
-					<div class="number" id="number7"> 9</div>
-					gols<br><br>
-				</div>
-				<div class="jogador">
-					<p>Romain Monval</p>
-
-					<div class="number" id="number8"> 9</div>
-					gols<br><br>
-				</div>
-
-
 			</div>
 
 		</div>

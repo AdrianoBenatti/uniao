@@ -2,7 +2,7 @@
 session_start();
 include("admin/functions.php");
 $page = $_GET['page']? $_GET['page']: 'home';
-$url = 'http://localhost/uniao/';
+$url = 'http://uniaosantaluiza.com.br/';
 $mediaUrl = $url.'media/';
 if(APPLICATION_ENV=='development'){
     ob_start();
@@ -34,7 +34,7 @@ if(APPLICATION_ENV=='development'){
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#5d4332">
+    <meta name="theme-color" content="#fb7f36">
 
 	<?php $keywords = 'uniao, futebol, cidade' ?>
 
@@ -56,6 +56,15 @@ if(APPLICATION_ENV=='development'){
 
     <!--    --><?php //echo $configuracoes['analytics'] ?>
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136921564-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-136921564-1');
+	</script>
 
 
     <script type='text/javascript'>

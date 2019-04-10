@@ -148,8 +148,8 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.ultimo-jogo .centraliza .prox-jogo img { width: 100%}
 
 	.home .ultimo-jogo { width: 100%; height: auto;}
-	.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 20px; height: 40px; padding: 6px 43px;}
-	.ultimo-jogo .centraliza .prox-jogo h2 { font-size: 19px; height: 40px; padding: 6px 43px;}
+	.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 20px; height: 70px; padding: 6px 43px;}
+	.ultimo-jogo .centraliza .prox-jogo h2 { font-size: 19px; height: 70px; padding: 6px 43px;}
 	.ultimo-jogo .centraliza .prox-jogo p { font-size: 15px;  height: 160px; padding: 5px 11px;}
 	.ultimo-jogo .centraliza .jogo-anterior p { font-size: 15px; height: 160px; padding: 5px 11px; }
 
