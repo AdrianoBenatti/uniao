@@ -60,20 +60,20 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .artilharia { padding: 30px 0; text-align: center;}
 .artilharia .dados { margin: 0 auto; text-align: center;}
 
-.ultimo-jogo { position: relative; width: 100%; background: url("../images/gramado.jpg"); background-size: cover; height: 770px; display: flex; justify-content: space-between;}
+.ultimo-jogo.gols { height: 700px;}
+
+.ultimo-jogo { position: relative; width: 100%; background: url("../images/gramado.jpg"); background-size: cover; height: auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .ultimo-jogo .contador { position: relative;}
 .ultimo-jogo .contador p { font-size: 80px; color: #ff5600; font-family: 'Baloo Thambi', cursive; margin: 0;}
 .ultimo-jogo .contador #number { font-size: 190px; color: #ff5600; font-family: 'Baloo Thambi', cursive;}
 .ultimo-jogo .contador { position: absolute; left: 28%; top: 24%; width: 600px; padding: 10px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 400px; opacity: 0.7; }
-.ultimo-jogo .centraliza { padding: 50px; text-align: center; padding: 50px; margin: 0 auto; width: 1324px; display: flex; justify-content: space-between; }
+.ultimo-jogo .centraliza { padding: 50px; text-align: center; margin: 0 auto; width: 1324px; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .ultimo-jogo .centraliza .jogo-anterior p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
 .ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 .ultimo-jogo .centraliza .prox-jogo p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
 .ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 
-
-
-.ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 200px 0; margin: 0 auto; text-align: center; }
+.ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; flex-wrap: wrap;}
 .ultimo-jogo .centraliza .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 500px;}
 .ultimo-jogo .centraliza .wrap-carousel img { width: 100%; height: 285px; padding: 0 12px;}
 .ultimo-jogo .centraliza .wrap-carousel .seta.seta_esq { position: absolute; top: 30%; left: -13%; z-index: 5; font-size: 80px; color: #ef580f;}
@@ -82,6 +82,10 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .ultimo-jogo .centraliza .wrap-carousel .seta.seta_dir:hover { font-size: 90px;}
 .ultimo-jogo .centraliza .historia .wrap-fotos { width: 400px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; }
 .ultimo-jogo .centraliza .historia .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 400px;}
+
+.ultimo-jogo .images { width: 1150px; margin: 0 auto;}
+.ultimo-jogo .images img { width: 15%; height: 15%; margin: 15px 20px; border: 2px solid #ff4400; border-radius: 20px;}
+
 
 .ultimo-jogo .text {  border-radius: 10px;  width: 600px; padding: 50px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 600px; text-align: justify; opacity: 0.8;}
 .ultimo-jogo .text h1 { font-size: 40px; color: #EF580F; font-weight: bold;}
@@ -165,6 +169,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.ultimo-jogo .centraliza .wrap-carousel img { width: 75vw; height: 58vw; padding: 0 12px; }
 	.ultimo-jogo .centraliza .wrap-carousel .seta.seta_dir { right: -16%;}
 
+
 	.wrap-fotos h2 { font-size: 24px; height: 38px; margin: 10px 0; }
 
 	.ultimo-jogo .artilharia { height: 970px;}
@@ -187,5 +192,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.ultimo-jogo .form .mensagem h3 { text-align: center;}
 	.ultimo-jogo .form #fContato input[type=submit] { margin: 0 auto;}
 
-
+	.ultimo-jogo .images { width: 100%; padding: 0 0 70px;}
+	.ultimo-jogo .images img { width: 18%; height: 10%;}
+	.ultimo-jogo .centraliza .wrap-fotos { padding: 160px 0;}
 }

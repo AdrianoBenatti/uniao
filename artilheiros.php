@@ -171,7 +171,7 @@
 				<div class="jogador">
 					<p>Eduardo Pereira (Du)</p>
 
-					<div class="number" id="number7"> 18</div>
+					<div class="number" id="number7"> 19</div>
 					gols<br><br>
 				</div>
 				<div class="jogador">
@@ -191,7 +191,7 @@
 				<div class="jogador">
 					<p>Roni</p>
 
-					<div class="number" id="number10"> 10</div>
+					<div class="number" id="number10"> 11</div>
 					gols<br><br>
 				</div>
 			</div>

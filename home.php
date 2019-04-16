@@ -12,13 +12,13 @@
 
 			<h2>Última apresentação</h2>
 			<figure>
-				<img src="<?php echo $url ?>images/jogos/31.03.19-2.jpeg">
+				<img src="<?php echo $url ?>images/jogos/14.04.19-2.jpeg">
 			</figure>
 			<p>
-				Jogo muito complicado, contra o bom time do Alvorada.<br>
-				O time disputou até o final porém com lances<br>
-				duvidosos pela arbitragem acabamos amargando a derrota.<br>
-				Iremos continuar trabalhando para lacnaçar os objetivos.
+				Jogo muito aberto<br>
+				Recheado de oportunidades.<br>
+				União Santa Luiza fez prevalecer o ataque<br>
+				e comandou a goleada.
 			</p>
 		</div>
 
@@ -26,12 +26,10 @@
 
 			<h2>Próximo compromisso</h2>
 			<figure>
-				<img src="<?php echo $url ?>images/jogos/14.04.19.jpeg">
+				<!--<img src="<?php echo $url ?>images/jogos/14.04.19.jpeg">-->
 			</figure>
 			<p>
-				Próximo compromisso, contamos com a vitória para nos recuperarmos.<br>
-				O time está em fase de teste e amistosos, ja visando<br>
-				o campeonato amador do meio do ano.
+				Jogo ainda indefinido.
 			</p>
 		</div>
 
