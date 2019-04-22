@@ -133,7 +133,7 @@
 				<div class="jogador">
 					<p>Felipe Henrike (Felipinho)</p>
 
-					<div class="number" id="number1"> 68</div>
+					<div class="number" id="number1"> 70</div>
 					gols<br><br>
 				</div>
 
@@ -175,6 +175,12 @@
 					gols<br><br>
 				</div>
 				<div class="jogador">
+					<p>Roni</p>
+
+					<div class="number" id="number10"> 13</div>
+					gols<br><br>
+				</div>
+				<div class="jogador">
 					<p>Elias Vicente (Liu)</p>
 
 					<div class="number" id="number9"> 12</div>
@@ -188,12 +194,7 @@
 					gols<br><br>
 				</div>
 
-				<div class="jogador">
-					<p>Roni</p>
-
-					<div class="number" id="number10"> 11</div>
-					gols<br><br>
-				</div>
+				
 			</div>
 
 		</div>

@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 
 .header { background-color: #fb7f36; width: 100%; height: 85px;  position: fixed; top: 0; bottom: 0; z-index: 1;  }
 
-.menu { margin: 0 auto; width: 950px; height: 100%;  display: flex; justify-content: space-between; text-align: center;}
+.menu { margin: 0 auto; width: 1080px; height: 100%;  display: flex; justify-content: space-between; text-align: center;}
 .menu figure img{ margin: 6px 0;}
 
 .links { display: flex; justify-content: space-between;  margin: 37px auto;}
@@ -100,6 +100,10 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .ultimo-jogo .artilharia .dados .parte1 .jogador .number  { font-size: 16px; color: #EF580F; font-weight: bold; }
 .ultimo-jogo .artilharia .dados .parte2 .jogador .number  { font-size: 16px; color: #EF580F; font-weight: bold; margin: 0 30px;}
 
+.ultimo-jogo .jogadores { border-radius: 10px; width: 600px; padding: 100px 65px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 700px; text-align: justify; margin: 0 auto; opacity: 0.8;}
+.ultimo-jogo .jogadores span { font-size: 30px; font-weight: bold; color: #ff4400; text-align: center;}
+.ultimo-jogo .jogadores p { font-size: 20px; color: #EF580F; font-weight: bold; margin: 0 30px;}
+
 .wrap-fotos h2 { font-size: 35px; height: 50px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8;}
 
 .ultimo-jogo .form { border-radius: 10px; width: 600px; padding: 105px 0; background-color: #e1a15c; border: 2px solid #fb7f36; height: 700px; text-align: justify; margin: 0 auto; opacity: 0.8;}
@@ -155,13 +159,13 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 20px; height: 70px; padding: 6px 43px;}
 	.ultimo-jogo .centraliza .prox-jogo h2 { font-size: 19px; height: 70px; padding: 6px 43px;}
 	.ultimo-jogo .centraliza .prox-jogo p { font-size: 15px;  height: 160px; padding: 5px 11px;}
-	.ultimo-jogo .centraliza .jogo-anterior p { font-size: 15px; height: 160px; padding: 5px 11px; }
+	.ultimo-jogo .centraliza .jogo-anterior p { font-size: 15px; height: 198px; padding: 5px 11px; }
 
 	.menu-footer { width: 100%;}
 
 	.ultimo-jogo .text h1 { font-size: 30px;}
 	.ultimo-jogo .text h2 { font-size: 20px;}
-	.ultimo-jogo .text { padding: 10px; height: 800px;}
+	.ultimo-jogo .text { padding: 10px; height: 900px;}
 	.historia { width: 100%;}
 	.historia .ultimo-jogo { height: 1280px;}
 	.ultimo-jogo .centraliza .historia .wrap-fotos { width: 100%;}
@@ -169,6 +173,10 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.ultimo-jogo .centraliza .wrap-carousel img { width: 75vw; height: 58vw; padding: 0 12px; }
 	.ultimo-jogo .centraliza .wrap-carousel .seta.seta_dir { right: -16%;}
 
+
+	.ultimo-jogo .jogadores { border-radius: 10px; width: 100%; padding: 100px 65px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 950px; text-align: justify; margin: 0 auto; opacity: 0.8;}
+	.ultimo-jogo .jogadores span { font-size: 30px; font-weight: bold; color: #ff4400; text-align: center;}
+	.ultimo-jogo .jogadores p { font-size: 20px; color: #EF580F; font-weight: bold; margin: 0 30px;}
 
 	.wrap-fotos h2 { font-size: 24px; height: 38px; margin: 10px 0; }
 
