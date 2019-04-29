@@ -152,7 +152,7 @@
 				<div class="jogador">
 					<p>Guilherme Binotte</p>
 
-					<div class="number" id="number4"> 25</div>
+					<div class="number" id="number4"> 26</div>
 					gols<br><br>
 				</div>
 				<div class="jogador">
@@ -194,7 +194,7 @@
 					gols<br><br>
 				</div>
 
-				
+
 			</div>
 
 		</div>

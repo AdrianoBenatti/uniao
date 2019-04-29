@@ -72,6 +72,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 .ultimo-jogo .centraliza .prox-jogo p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
 .ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.ultimo-jogo .centraliza h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 
 .ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; flex-wrap: wrap;}
 .ultimo-jogo .centraliza .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 500px;}
