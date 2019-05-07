@@ -133,7 +133,7 @@
 				<div class="jogador">
 					<p>Felipe Henrike (Felipinho)</p>
 
-					<div class="number" id="number1"> 70</div>
+					<div class="number" id="number1"> 71</div>
 					gols<br><br>
 				</div>
 

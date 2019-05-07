@@ -42,6 +42,7 @@
 			<nav id="menu-mobile">
 				<a href="<?php echo $url . "home" ?>">Home</a>
 				<a href="<?php echo $url . "jogadores" ?>">Jogadores</a>
+				<a href="<?php echo $url . "patrocinadores" ?>">Patrocinadores</a>
 				<a href="<?php echo $url . "historia" ?>">História</a>
 				<a href="<?php echo $url . "artilheiros" ?>">Artilheiros</a>
 				<a href="<?php echo $url . "fotos" ?>">Fotos</a>
@@ -59,6 +60,7 @@
 
 			<a href="<?php echo $url . "home" ?>">Home</a>
 			<a href="<?php echo $url . "jogadores" ?>">Jogadores</a>
+			<a href="<?php echo $url . "patrocinadores" ?>">Patrocinadores</a>
 			<a href="<?php echo $url . "historia" ?>">História</a>
 			<a href="<?php echo $url . "artilheiros" ?>">Artilheiros</a>
 			<a href="<?php echo $url . "fotos" ?>">Fotos</a>

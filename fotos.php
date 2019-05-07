@@ -117,14 +117,18 @@
 
 	<div class="images">
 
-		<a class="foto" href="<?php echo $url ?>images/1.jpeg"><img src="<?php echo $url ?>images/1.jpeg" alt="União Esporte Clube"/></a>
+		<a class="foto" href="<?php echo $url ?>images/24.jpeg"><img src="<?php echo $url ?>images/24.jpeg" alt="União Esporte Clube"/></a>
+		<a class="foto" href="<?php echo $url ?>images/25.jpeg"><img src="<?php echo $url ?>images/25.jpeg" alt="União Esporte Clube"/></a>
+		<a class="foto" href="<?php echo $url ?>images/26.jpeg"><img src="<?php echo $url ?>images/26.jpeg" alt="União Esporte Clube"/></a>
+		<a class="foto" href="<?php echo $url ?>images/27.jpeg"><img src="<?php echo $url ?>images/27.jpeg" alt="União Esporte Clube"/></a>
+
+
 		<a class="foto" href="<?php echo $url ?>images/2.jpeg"><img src="<?php echo $url ?>images/2.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/3.jpeg"><img src="<?php echo $url ?>images/3.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/4.jpeg"><img src="<?php echo $url ?>images/4.jpeg" alt="União Esporte Clube"/></a>
 
 		<a class="foto" href="<?php echo $url ?>images/5.jpeg"><img src="<?php echo $url ?>images/5.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/6.jpeg"><img src="<?php echo $url ?>images/6.jpeg" alt="União Esporte Clube"/></a>
-		<a class="foto" href="<?php echo $url ?>images/7.jpeg"><img src="<?php echo $url ?>images/7.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/8.jpeg"><img src="<?php echo $url ?>images/8.jpeg" alt="União Esporte Clube"/></a>
 
 		<a class="foto" href="<?php echo $url ?>images/9.jpeg"><img src="<?php echo $url ?>images/9.jpeg" alt="União Esporte Clube"/></a>
@@ -135,16 +139,11 @@
 		<a class="foto" href="<?php echo $url ?>images/13.jpeg"><img src="<?php echo $url ?>images/13.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/14.jpeg"><img src="<?php echo $url ?>images/14.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/15.jpeg"><img src="<?php echo $url ?>images/15.jpeg" alt="União Esporte Clube"/></a>
-		<a class="foto" href="<?php echo $url ?>images/16.jpeg"><img src="<?php echo $url ?>images/16.jpeg" alt="União Esporte Clube"/></a>
 
-		<a class="foto" href="<?php echo $url ?>images/17.jpeg"><img src="<?php echo $url ?>images/17.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/18.jpeg"><img src="<?php echo $url ?>images/18.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/19.jpeg"><img src="<?php echo $url ?>images/19.jpeg" alt="União Esporte Clube"/></a>
 		<a class="foto" href="<?php echo $url ?>images/20.jpeg"><img src="<?php echo $url ?>images/20.jpeg" alt="União Esporte Clube"/></a>
 
-		<a class="foto" href="<?php echo $url ?>images/21.jpeg"><img src="<?php echo $url ?>images/21.jpeg" alt="União Esporte Clube"/></a>
-		<a class="foto" href="<?php echo $url ?>images/22.jpeg"><img src="<?php echo $url ?>images/22.jpeg" alt="União Esporte Clube"/></a>
-		<a class="foto" href="<?php echo $url ?>images/23.jpeg"><img src="<?php echo $url ?>images/23.jpeg" alt="União Esporte Clube"/></a>
 	</div>
 
 </div>

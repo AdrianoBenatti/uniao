@@ -32,9 +32,9 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 
 
 
-.header { background-color: #fb7f36; width: 100%; height: 85px;  position: fixed; top: 0; bottom: 0; z-index: 1;  }
+.header { background-color: #fb7f36; width: 100%; height: 85px;  position: fixed; top: 0; bottom: 0; z-index: 500;  }
 
-.menu { margin: 0 auto; width: 1080px; height: 100%;  display: flex; justify-content: space-between; text-align: center;}
+.menu { margin: 0 auto; width: 1250px; height: 100%;  display: flex; justify-content: space-between; text-align: center;}
 .menu figure img{ margin: 6px 0;}
 
 .links { display: flex; justify-content: space-between;  margin: 37px auto;}
@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 
 .banner { background: url("../images/banner.jpg")top center no-repeat; background-size: cover; width: 100%; height: 635px; background-attachment: fixed; }
 
-.footer { height: 295px; width: 100%; background-color: #fb7f36;}
+.footer { height: auto; width: 100%; background-color: #fb7f36;}
 
 .ultimo-jogo { width: 100%; height: 500px;}
 
@@ -55,24 +55,30 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 
 .sociais-footer { display: flex; justify-content: space-between; width: 80px; margin: -40px auto;}
 
-.uniao { margin: 40px auto; text-align: center; font-size: 30px; font-weight: bold; color: #ffffff; }
+.uniao { margin: 40px 0 0 0; text-align: center; font-size: 30px; font-weight: bold; color: #ffffff; }
 
 .artilharia { padding: 30px 0; text-align: center;}
 .artilharia .dados { margin: 0 auto; text-align: center;}
 
 .ultimo-jogo.gols { height: 700px;}
 
-.ultimo-jogo { position: relative; width: 100%; background: url("../images/gramado.jpg"); background-size: cover; height: auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
+.ultimo-jogo { position: relative; width: 100%; background: url("../images/gramado.jpg") center repeat; background-size: cover; height: auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
 .ultimo-jogo .contador { position: relative;}
 .ultimo-jogo .contador p { font-size: 80px; color: #ff5600; font-family: 'Baloo Thambi', cursive; margin: 0;}
 .ultimo-jogo .contador #number { font-size: 190px; color: #ff5600; font-family: 'Baloo Thambi', cursive;}
 .ultimo-jogo .contador { position: absolute; left: 28%; top: 24%; width: 600px; padding: 10px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 400px; opacity: 0.7; }
 .ultimo-jogo .centraliza { padding: 50px; text-align: center; margin: 0 auto; width: 1324px; display: flex; justify-content: space-between; flex-wrap: wrap;}
-.ultimo-jogo .centraliza .jogo-anterior p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
+.ultimo-jogo .centraliza .jogo-anterior p { font-weight: bold; font-size: 16px; height: auto; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
 .ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 .ultimo-jogo .centraliza .prox-jogo p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
 .ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 .ultimo-jogo .centraliza h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.home .ultimo-jogo .patrocinadores .centraliza.patrocinio { padding: 40px; text-align: center; margin: 0 auto; width: 900px; justify-content: space-between; display: block;}
+.home .ultimo-jogo .patrocinadores .centraliza.patrocinio figure { display: flex;}
+.home .ultimo-jogo .patrocinadores .centraliza.patrocinio.primeiro { padding: 150px 0 0 0;}
+
+.patrocinadores { width: 100%; height: auto; background: url("../images/gramado.jpg")center repeat; }
+
 
 .ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; flex-wrap: wrap;}
 .ultimo-jogo .centraliza .wrap-carousel { position: relative; margin: 0 auto; text-align: center; width: 500px;}
@@ -126,6 +132,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 :-ms-input-placeholder { color: #FF4400; font-size: 16px; font-weight: bold;}
 .ultimo-jogo .form #fContato label.error { color: #FF4400; font-size: 16px; font-weight: bold;}
 
+
 .wrap-loading{width: 100%; height: 100%; background: rgba(0, 0, 0, .3) url(../images/loading.gif) center no-repeat; display: none; position: fixed; top: 0; left: 0; z-index: 9999;}
 
 .topnav { display: none;}
@@ -138,7 +145,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.topnav { display: block;}
 
 	.header .menu #menu-mobile{ display: none;}
-	.header .menu #menu-mobile.active { display: block; position: absolute; left: 0; top: 100%; z-index: 2; width: 100%; background-color: #fb7f36; color: #FFFFFF;}
+	.header .menu #menu-mobile.active { display: block; position: absolute; left: 0; top: 100%; z-index: 2; width: 100%; height: auto; background-color: #fb7f36; color: #FFFFFF;}
 	.header .menu #menu-mobile.active a { font-size: 18px; margin: 10px 70px; display: flex; font-weight: bold; text-align: center;}
 
 	.click_mobile.active { display: none;}
@@ -159,8 +166,8 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.home .ultimo-jogo { width: 100%; height: auto;}
 	.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 20px; height: 70px; padding: 6px 43px;}
 	.ultimo-jogo .centraliza .prox-jogo h2 { font-size: 19px; height: 70px; padding: 6px 43px;}
-	.ultimo-jogo .centraliza .prox-jogo p { font-size: 15px;  height: 160px; padding: 5px 11px;}
-	.ultimo-jogo .centraliza .jogo-anterior p { font-size: 15px; height: 198px; padding: 5px 11px; }
+	.ultimo-jogo .centraliza .prox-jogo p { font-size: 15px;  height: auto; padding: 5px 11px;}
+	.ultimo-jogo .centraliza .jogo-anterior p { font-size: 15px; height: auto; padding: 5px 11px; }
 
 	.menu-footer { width: 100%;}
 
@@ -204,4 +211,10 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.ultimo-jogo .images { width: 100%; padding: 0 0 70px;}
 	.ultimo-jogo .images img { width: 18%; height: 10%;}
 	.ultimo-jogo .centraliza .wrap-fotos { padding: 160px 0;}
+
+	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio { padding: 40px; text-align: center; margin: 0 auto; width: 100%; justify-content: space-between; display: block;}
+	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio figure { display: flex; flex-wrap: wrap;}
+	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio.primeiro { padding: 150px 0 0 0; width: 100%;}
+	.home .ultimo-jogo .patrocinadores h2 { height: auto; font-size: 30px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+
 }
