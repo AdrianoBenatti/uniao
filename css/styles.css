@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 .ultimo-jogo .centraliza .prox-jogo p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
 .ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
-.ultimo-jogo .centraliza h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
+.ultimo-jogo .centraliza h2 { font-size: 30px; height: auto; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 .home .ultimo-jogo .patrocinadores .centraliza.patrocinio { padding: 40px; text-align: center; margin: 0 auto; width: 900px; justify-content: space-between; display: block;}
 .home .ultimo-jogo .patrocinadores .centraliza.patrocinio figure { display: flex;}
 .home .ultimo-jogo .patrocinadores .centraliza.patrocinio.primeiro { padding: 150px 0 0 0;}
@@ -175,7 +175,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.ultimo-jogo .text h2 { font-size: 20px;}
 	.ultimo-jogo .text { padding: 10px; height: 900px;}
 	.historia { width: 100%;}
-	.historia .ultimo-jogo { height: 1280px;}
+	.historia .ultimo-jogo { height: auto;}
 	.ultimo-jogo .centraliza .historia .wrap-fotos { width: 100%;}
 	.ultimo-jogo .centraliza .historia .wrap-carousel { width: 100%;}
 	.ultimo-jogo .centraliza .wrap-carousel img { width: 75vw; height: 58vw; padding: 0 12px; }
