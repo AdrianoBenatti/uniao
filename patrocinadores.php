@@ -40,7 +40,7 @@
 			</div>
 
 			<div class="centraliza patrocinio">
-				<h2>Polishop.com.vc</h2>
+				<h2>Polishop.com.vc - <b>tel: 19 99742-9661</b></h2>
 				<div class="jogo-anterior">
 					<figure>
 						<img src="<?php echo $url ?>images/patrocinadores/polishop.jpg">

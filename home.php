@@ -28,10 +28,14 @@
 
 				<h2>Próximo compromisso</h2>
 				<figure>
-					<!--	<img src="<?php echo $url ?>">-->
+					<img src="<?php echo $url ?>images/jogos/12.05.2019.jpg">
 				</figure>
 				<p>
-					Indefinido.
+					O União Santa Luiza parte em busca de<br>
+					de uma recuperação no próximo confronto.<br>
+					O time segue forte na busca pela vitória,<br>
+					pensando em evoluir para a disputa do campeonato.<br>
+					Foco no acesso.
 				</p>
 			</div>
 		</div>
