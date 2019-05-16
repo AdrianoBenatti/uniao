@@ -11,16 +11,14 @@
 
 				<h2>Última apresentação</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/05.05.19-2.jpg">
+					<img src="<?php echo $url ?>images/jogos/12.05.2019-2.jpg">
 				</figure>
 				<p>
 					Jogo muito complicado,<br>
-					contra o bom time do Borussia da 2ª divisão.<br>
-					Primeiro tempo com o União jogando melhor,<br>
-					com bom toque de bola e indo pra cima, porém,<br>
-					no segundo tempo o Borussia conseguiu ser superior<br>
-					e finalizar as jogadas pra gol.<br>
-					Boa partida, infelizmente a vitória não veio.
+					Com o time misto, o treinador David,<br>
+					pensando em dar oportunidades e testar<br>
+					jogadores que possam ir bem e ganhar um vaga<br>
+					para o campeonato.
 				</p>
 			</div>
 
@@ -28,14 +26,12 @@
 
 				<h2>Próximo compromisso</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/12.05.2019.jpg">
+					<img src="<?php echo $url ?>images/jogos/19.05.2019.jpg">
 				</figure>
 				<p>
-					O União Santa Luiza parte em busca de<br>
-					de uma recuperação no próximo confronto.<br>
-					O time segue forte na busca pela vitória,<br>
-					pensando em evoluir para a disputa do campeonato.<br>
-					Foco no acesso.
+					O União precisa de uma recuperação<br>
+					depois de duas derrotas seguidas, o time<br>
+					parte em busca da vitória, custe o que custar.
 				</p>
 			</div>
 		</div>
