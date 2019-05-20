@@ -22,7 +22,7 @@ $(function () {
 
 		<div class="contador reveal" id="contador" data-delay="400">
 			<p>Gols</p>
-			<div id="number">318</div>
+			<div id="number">323</div>
 		</div>
 
 	</div>

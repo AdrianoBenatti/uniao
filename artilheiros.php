@@ -133,7 +133,7 @@
 				<div class="jogador">
 					<p>Felipe Henrike (Felipinho)</p>
 
-					<div class="number" id="number1"> 72</div>
+					<div class="number" id="number1"> 73</div>
 					gols<br><br>
 				</div>
 
@@ -152,7 +152,7 @@
 				<div class="jogador">
 					<p>Guilherme Binotte</p>
 
-					<div class="number" id="number4"> 26</div>
+					<div class="number" id="number4"> 27</div>
 					gols<br><br>
 				</div>
 				<div class="jogador">

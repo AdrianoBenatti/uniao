@@ -11,14 +11,15 @@
 
 				<h2>Última apresentação</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/12.05.2019-2.jpg">
+					<img src="<?php echo $url ?>images/jogos/19.05.2019-2.jpeg">
 				</figure>
 				<p>
-					Jogo muito complicado,<br>
-					Com o time misto, o treinador David,<br>
-					pensando em dar oportunidades e testar<br>
-					jogadores que possam ir bem e ganhar um vaga<br>
-					para o campeonato.
+					Com um belo futebol apresentado<br>
+					e com belos gols o União Santa Luiza<br>
+					voltou a vencer contra os bons garotos<br>
+					do time do Imigrantes. Com organização e <br>
+					toque de bola, seguimos rumo ao campeonato<br>
+					amador.
 				</p>
 			</div>
 
@@ -26,12 +27,14 @@
 
 				<h2>Próximo compromisso</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/19.05.2019.jpg">
+					<img src="<?php echo $url ?>images/jogos/26.05.2019.jpeg">
 				</figure>
 				<p>
-					O União precisa de uma recuperação<br>
-					depois de duas derrotas seguidas, o time<br>
-					parte em busca da vitória, custe o que custar.
+					Em busca de manter a série de vitórias<br>
+					enfrentaremos o bom time do Ajax.<br>
+					O time segue em grande preparo para<br>
+					o campeonato, e cada jogo tem que ser visto<br>
+					como um decisão.
 				</p>
 			</div>
 		</div>
