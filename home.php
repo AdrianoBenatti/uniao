@@ -11,15 +11,13 @@
 
 				<h2>Última apresentação</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/19.05.2019-2.jpeg">
+					<img src="<?php echo $url ?>images/jogos/02.06.19-2.jpeg">
 				</figure>
 				<p>
-					Com um belo futebol apresentado<br>
-					e com belos gols o União Santa Luiza<br>
-					voltou a vencer contra os bons garotos<br>
-					do time do Imigrantes. Com organização e <br>
-					toque de bola, seguimos rumo ao campeonato<br>
-					amador.
+					Jogo muito complicado contra o time do Guarapari,<br>
+					poucas chances de gol, e pouca eficiência<br>
+					no toque de bola comprometeram o bom futebol<br>
+					e a vitória.
 				</p>
 			</div>
 
@@ -27,14 +25,14 @@
 
 				<h2>Próximo compromisso</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/26.05.2019.jpeg">
+					<img src="<?php echo $url ?>images/jogos/06.06.19.jpeg">
 				</figure>
 				<p>
-					Em busca de manter a série de vitórias<br>
-					enfrentaremos o bom time do Ajax.<br>
-					O time segue em grande preparo para<br>
-					o campeonato, e cada jogo tem que ser visto<br>
-					como um decisão.
+					Nesta quinta feira o time do União<br>
+					entrará em campo no estádio Municipal do Progresso.<br>
+					Iremos enfretar outro bom time e precisando da <br>
+					vitória e de voltar a presentar o bom futebol<br>
+					iremos em busca de um bom jogo.
 				</p>
 			</div>
 		</div>
