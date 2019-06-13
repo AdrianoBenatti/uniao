@@ -1,0 +1,104 @@
+        <html xmlns:o="urn:schemas-microsoft-com:office:office"
+               xmlns:x="urn:schemas-microsoft-com:office:excel"
+                xmlns="http://www.w3.org/TR/REC-html40">
+
+                <head>
+                <meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+                <meta name=ProgId content=Excel.Sheet>
+                <!--[if gte mso 9]><xml>
+                 <o:DocumentProperties>
+                  <o:LastAuthor>Sriram</o:LastAuthor>
+                  <o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+                  <o:Version>10.2625</o:Version>
+                 </o:DocumentProperties>
+                 <o:OfficeDocumentSettings>
+                  <o:DownloadComponents/>
+                 </o:OfficeDocumentSettings>
+                </xml><![endif]-->
+                <style>
+                <!--table
+                    {mso-displayed-decimal-separator:"\.";
+                    mso-displayed-thousand-separator:"\,";}
+                @page
+                    {margin:1.0in .75in 1.0in .75in;
+                    mso-header-margin:.5in;
+                    mso-footer-margin:.5in;}
+                tr
+                    {mso-height-source:auto;}
+                col
+                    {mso-width-source:auto;}
+                br
+                    {mso-data-placement:same-cell;}
+                .style0
+                    {mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    white-space:nowrap;
+                    mso-rotate:0;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    border:none;
+                    mso-protection:locked visible;
+                    mso-style-name:Normal;
+                    mso-style-id:0;}
+                td
+                    {mso-style-parent:style0;
+                    padding-top:1px;
+                    padding-right:1px;
+                    padding-left:1px;
+                    mso-ignore:padding;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    border:none;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    mso-protection:locked visible;
+                    white-space:nowrap;
+                    mso-rotate:0;}
+                .xl24
+                    {mso-style-parent:style0;
+                    white-space:normal;}
+                -->
+                </style>
+                <!--[if gte mso 9]><xml>
+                 <x:ExcelWorkbook>
+                  <x:ExcelWorksheets>
+                   <x:ExcelWorksheet>
+                    <x:Name>NOME_PLANILHA</x:Name>
+                    <x:WorksheetOptions>
+                     <x:Selected/>
+                     <x:ProtectContents>False</x:ProtectContents>
+                     <x:ProtectObjects>False</x:ProtectObjects>
+                     <x:ProtectScenarios>False</x:ProtectScenarios>
+                    </x:WorksheetOptions>
+                   </x:ExcelWorksheet>
+                  </x:ExcelWorksheets>
+                  <x:WindowHeight>10005</x:WindowHeight>
+                  <x:WindowWidth>10005</x:WindowWidth>
+                  <x:WindowTopX>120</x:WindowTopX>
+                  <x:WindowTopY>135</x:WindowTopY>
+                  <x:ProtectStructure>False</x:ProtectStructure>
+                  <x:ProtectWindows>False</x:ProtectWindows>
+                 </x:ExcelWorkbook>
+                </xml><![endif]-->
+                </head>
+
+                <body link=blue vlink=purple>
+                <table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 >Nome</td><td class=xl24 width=64 >E-mail</td></tr><tr><td class=xl24 width=64 >Lígia Hobus Mandel</td><td class=xl24 width=64 >financeiro@cosmaidi.com.br</td></tr><tr><td class=xl24 width=64 ></td><td class=xl24 width=64 ></td></tr><tr><td class=xl24 width=64 >BARBARA BERTECHINI E SILVA</td><td class=xl24 width=64 >BERTECHINIBARBARA@GMAIL.COM</td></tr><tr><td class=xl24 width=64 >horny</td><td class=xl24 width=64 >klark2d4@gmail.com</td></tr><tr><td class=xl24 width=64 >luidji</td><td class=xl24 width=64 >darel233455@gmail.com</td></tr><tr><td class=xl24 width=64 >Sophia</td><td class=xl24 width=64 >chris08@ruijianggroup.com</td></tr><tr><td class=xl24 width=64 >Jonatas Cruz</td><td class=xl24 width=64 >jonatas.cruz8@gmail.com</td></tr><tr><td class=xl24 width=64 >Paula Maria Pilon Martins</td><td class=xl24 width=64 >paulapilon@uol.com.br</td></tr><tr><td class=xl24 width=64 >FRANCISCO HIRAO</td><td class=xl24 width=64 >fhirao@bol.com.br</td></tr><tr><td class=xl24 width=64 >Renilda A. Santos</td><td class=xl24 width=64 >renilda.ap@hotmail.com</td></tr><tr><td class=xl24 width=64 >João Victor Dalaneze</td><td class=xl24 width=64 >assistenciatecnica@capuani.com.br</td></tr><tr><td class=xl24 width=64 >camilla sola</td><td class=xl24 width=64 >camillasola@uol.com.br</td></tr><tr><td class=xl24 width=64 >Maria da graça beretta</td><td class=xl24 width=64 >m.beretta@itelefonica.com.br</td></tr><tr><td class=xl24 width=64 >Geraldo</td><td class=xl24 width=64 >sandra.arovida@terra.com.br</td></tr><tr><td class=xl24 width=64 >Patrícia</td><td class=xl24 width=64 >pthomaz@cramerbrasil.com.br</td></tr><tr><td class=xl24 width=64 >Soulbela Cosméticos</td><td class=xl24 width=64 >soulbelacosmeticos@gmail.com</td></tr><tr><td class=xl24 width=64 >Samara Claudino</td><td class=xl24 width=64 >sammara123@hotmail.com</td></tr><tr><td class=xl24 width=64 >Alejandra Herrera L</td><td class=xl24 width=64 >alejandra-cristina.herrera@basf.com</td></tr><tr><td class=xl24 width=64 >Patrícia de Oliveira Miranda</td><td class=xl24 width=64 >patricia.miranda@barrominas.com.br</td></tr><tr><td class=xl24 width=64 >Elaine Ferreira  Alves</td><td class=xl24 width=64 >laine.quimica@hotmail.com</td></tr><tr><td class=xl24 width=64 >Bianca Benevides</td><td class=xl24 width=64 >bianca.benevides@memphisbr.com</td></tr><tr><td class=xl24 width=64 >selma</td><td class=xl24 width=64 >essenciamanipulacao@yahoo.com.br</td></tr><tr><td class=xl24 width=64 >Alessandra Morgado</td><td class=xl24 width=64 >alessa.morgado@gmail.com</td></tr><tr><td class=xl24 width=64 >Katia</td><td class=xl24 width=64 >matsufar@hotmail.com</td></tr><tr><td class=xl24 width=64 >alexandre fontana</td><td class=xl24 width=64 >fontana@aerz.com.br</td></tr><tr><td class=xl24 width=64 >Ana  Paula Marcheto</td><td class=xl24 width=64 >amarcheto@rioquimica.com.br</td></tr><tr><td class=xl24 width=64 >SÔNIA SANTOS DE AGUIAR</td><td class=xl24 width=64 >soninha.aguiar@ig.com.br</td></tr><tr><td class=xl24 width=64 >Sara Bentler Vanzin</td><td class=xl24 width=64 >sara@pharmaspecial.com.br</td></tr><tr><td class=xl24 width=64 >Gabriel barros de Oliveira</td><td class=xl24 width=64 >ggabriel_Oliveira@hotmail.com</td></tr><tr><td class=xl24 width=64 >Adriana Maria</td><td class=xl24 width=64 >adriana.maria@vidfarma.com.br</td></tr><tr><td class=xl24 width=64 >Ivanir Oliveira</td><td class=xl24 width=64 >ivoliveira@biolabfarma.com.br</td></tr><tr><td class=xl24 width=64 >Debora Silvestre Zaremba</td><td class=xl24 width=64 >dzaremba@biolabfarma.com.br</td></tr><tr><td class=xl24 width=64 >Paulo</td><td class=xl24 width=64 >paulosoaresccb@gmail.com</td></tr><tr><td class=xl24 width=64 >ELIVETE CAMARGO PICELO</td><td class=xl24 width=64 >elipicelo@hotmail.com</td></tr><tr><td class=xl24 width=64 >JEANE M. QUERINO SILVEIRA</td><td class=xl24 width=64 >jeane@aromaticacosmeticos.com.br</td></tr><tr><td class=xl24 width=64 >Gabriella</td><td class=xl24 width=64 >gabriella@makelab.com.br</td></tr><tr><td class=xl24 width=64 >Juliana</td><td class=xl24 width=64 >juliana@makelab.com.br</td></tr><tr><td class=xl24 width=64 >Ricardo dos Santos Macedo</td><td class=xl24 width=64 >ricardosm12@bol.com.br</td></tr><tr><td class=xl24 width=64 >diego sena almeida</td><td class=xl24 width=64 >diego_sena100@yahoo.com.br</td></tr><tr><td class=xl24 width=64 >wagner cicero da conceiçao</td><td class=xl24 width=64 >wagnerfarmobio@yahoo.com.br</td></tr><tr><td class=xl24 width=64 >Joanilde Juliano</td><td class=xl24 width=64 >jam9de10@hotmail.com</td></tr><tr><td class=xl24 width=64 >Simone Lunardi</td><td class=xl24 width=64 >simone@tahate.com</td></tr><tr><td class=xl24 width=64 >Danielle</td><td class=xl24 width=64 >dannysfashion@hotmail.com</td></tr><tr><td class=xl24 width=64 >waldomiro vicente junior</td><td class=xl24 width=64 >waldomiro@jrcargo.com.br</td></tr><tr><td class=xl24 width=64 >Célio Antonio da Silva</td><td class=xl24 width=64 >desenvolvimento2@larree.com.br</td></tr><tr><td class=xl24 width=64 >MARIANNE - EVOÓC COSMÉTICOS</td><td class=xl24 width=64 >mari@evooc.com.br</td></tr><tr><td class=xl24 width=64 >Emmerson Gonçalves Viana</td><td class=xl24 width=64 >emmersonviana@gmail.com</td></tr><tr><td class=xl24 width=64 >Silvana Nery de Rezende Viana</td><td class=xl24 width=64 >silnrm@gmail.com</td></tr><tr><td class=xl24 width=64 >TOPS COSMÉTICOS LTDA ME</td><td class=xl24 width=64 >contato@jmcbiocosmeticos.com.br</td></tr><tr><td class=xl24 width=64 >Gustavo</td><td class=xl24 width=64 >gustavo.m@adatina.com</td></tr><tr><td class=xl24 width=64 >Pai</td><td class=xl24 width=64 >qualidade@adatina.com</td></tr><tr><td class=xl24 width=64 >Maria Christina Smith</td><td class=xl24 width=64 >ksmith@terra.com.br</td></tr><tr><td class=xl24 width=64 >Francine Laurindo</td><td class=xl24 width=64 >francine@cosmeticinnovation.com.br</td></tr><tr><td class=xl24 width=64 >MARILDA ALVES</td><td class=xl24 width=64 >laboratoriolacosmo@bol.com.br</td></tr><tr><td class=xl24 width=64 >Jeciana</td><td class=xl24 width=64 >jecifidelis132@hotmail.com</td></tr><tr><td class=xl24 width=64 >Thiago</td><td class=xl24 width=64 >thiago_rivas@hotmail.com</td></tr><tr><td class=xl24 width=64 >Luciano</td><td class=xl24 width=64 >lucianorfreitas@yahoo.com.br</td></tr><tr><td class=xl24 width=64 >Elen</td><td class=xl24 width=64 >qualidade@victoriamaxx.com.br</td></tr><tr><td class=xl24 width=64 >Fernanda Galhardo Camargo Soares</td><td class=xl24 width=64 >fernandagcsoares@gmail.com</td></tr><tr><td class=xl24 width=64 >Mercedes Nuñez Gimenez</td><td class=xl24 width=64 >mnunez@srl.com.py</td></tr><tr><td class=xl24 width=64 >ANA PAULA MORAIS</td><td class=xl24 width=64 >anapaula@pharmaspecial.com.br</td></tr></table></body></html>

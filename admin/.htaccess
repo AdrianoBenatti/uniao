@@ -1,0 +1,17 @@
+Options -MultiViews
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^([a-z0-9\-_]+)/?$ index.php?page=$1 [NC,L]
+RewriteRule ^(importar)/(true)?$ index.php?page=importar&success=$2 [NC,L]
+RewriteRule ^(importar_consultores)/(true)?$ index.php?page=importar_consultores&success=$2 [NC,L]
+RewriteRule ^(aprovar)/([a-z0-9\-_]+)?$ index.php?page=aprovar&id=$2 [NC,L]
+RewriteRule ^(aprovarPic)/([a-z0-9\-_]+)?$ index.php?page=aprovarPic&id=$2 [NC,L]
+RewriteRule ^([a-z0-9\-_]+)/([a-z\-]+)/?$ index.php?page=$1&acao=$2 [NC,L]
+RewriteRule ^([a-z0-9\-_]+)/([a-z\-]+)/([0-9\-]+)/?$ index.php?page=$1&acao=$2&id=$3 [NC,L]
+RewriteRule ^([a-z0-9\-_]+)/([a-z\-]+)/([0-9\-]+)/([a-z\-]+)/?$ index.php?page=$1&acao=$2&id=$3&menu=$4 [NC,L]
+

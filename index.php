@@ -2,25 +2,17 @@
 session_start();
 include("admin/functions.php");
 $page = $_GET['page']? $_GET['page']: 'home';
-$url = 'http://uniaosantaluiza.com.br/';
-$mediaUrl = $url.'media/';
-if(APPLICATION_ENV=='development'){
-    ob_start();
-}else{
-    ob_start("sanitize_output"); // Novo buffer
-}
+$url = getConfig("url_site_pharma");
+$mediaUrl = getConfig("url_site_pharma").'media/';
+ob_start(); // Novo buffer
 if(!file_exists("$page.php")){
-    header('HTTP/1.0 404 Not Found');
-    $page = 'error404';
+	header('HTTP/1.0 404 Not Found');
+	$page = "error404";
 }
 include("$page.php");
 $content = ob_get_contents(); // Armazena o content
 ob_end_clean(); // Limpa o buffer e fecha
-if(APPLICATION_ENV=='development'){
-    ob_start();
-}else{
-    ob_start("sanitize_output"); // Novo buffer
-}
+ob_start();
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">

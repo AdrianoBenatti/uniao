@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 
 .banner { background: url("../images/banner.jpg")top center no-repeat; background-size: cover; width: 100%; height: 635px; background-attachment: fixed; }
 
-.footer { height: auto; width: 100%; background-color: #fb7f36;}
+.footer { height: 250px; width: 100%; background-color: #fb7f36;}
 
 .ultimo-jogo { width: 100%; height: 500px;}
 

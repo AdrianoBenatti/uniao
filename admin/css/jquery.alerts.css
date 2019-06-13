@@ -1,0 +1,10 @@
+#popup_container {font-family: Arial, sans-serif; font-size: 12px; min-width: 300px; max-width: 600px; background: #FFF; border: solid 5px #999; color: #000; border-radius: 5px;}
+#popup_title {font-size: 14px; text-align: center; line-height: 1.75em; background: #666666; color:#fff; font-weight:700; border: solid 1px #FFF; border-bottom: solid 1px #999; cursor: default;}
+#popup_container input {background: #666666; color:#fff; border:1px #666666 solid; cursor: pointer; float: none; margin: 0; display: inline-block; width: auto;}
+#popup_content {padding: 1em 1.75em; margin: 0;}
+#popup_content.alert {}
+#popup_content.confirm {}
+#popup_content.prompt {}
+#popup_message {padding: 0 5px; text-align: center;}
+#popup_panel {text-align: center; margin: 1em auto 0;}
+#popup_prompt {margin: .5em 0;}
