@@ -1,27 +1,15 @@
 <?php
-autorizar("cadastros_pharma");
+autorizar("cadastros");
 if ($_POST) {
 	foreach ($_POST as $k => $v ) {
 		if(!is_array($v)) $$k = utf8_decode(removeWordChars($v));
 	}
 	$id = $_GET['id'];
 
-	if ($aprovado == "1" && $data_aprovacao == "") {
-		$data_aprovacao = date('Y-m-d H:i:s');
-		sendEmail($email, 'Seu cadastro foi aprovado!', '
-			<p>Seu login foi aprovado! Agora você pode desfrutar de nossas formulas</p>
-			<p>Para acessar nossas formulas acesse o link: <a href="http://www.pharmaspecial.com.br/produtos" target="_blank">pharmaspecial.com.br/produtos</a></p><br>
-		', 'anapaula@pharmaspecial.com.br');
-	}
-
 	$data = array(
 		"nome" => $nome,
 		"email" => $email,
-		"tipo" => $tipo,
-		"razao_social" => $razao_social,
-		"cnpj" => $cnpj,
-		"profissao" => $profissao,
-		"conselho_de_classe" => $conselho_de_classe,
+		"funcao" => $funcao,
 		"aprovado" => $aprovado,
 		"data_aprovacao" => $data_aprovacao
 	);
@@ -32,12 +20,12 @@ if ($_POST) {
 
 	if($acao == "Incluir") $id = null;
 
-	$id = save($data, "cadastros_pharma", $id);
+	$id = save($data, "cadastros", $id);
 
-	if(!$continue) header("Location: {$url}cadastrosPharma"); else header("Location: {$url}$page/Alterar/$id");
+	if(!$continue) header("Location: {$url}cadastros"); else header("Location: {$url}$page/Alterar/$id");
 }else{
 	if ($acao == "Alterar") {
-		$sql = "SELECT * FROM cadastros_pharma WHERE id = $id";
+		$sql = "SELECT * FROM cadastros WHERE id = $id";
 		$query = mysql_query($sql, $connect);
 		if ($dados = mysql_fetch_array($query)){
 			foreach($dados as $key=>$value) {
@@ -46,7 +34,7 @@ if ($_POST) {
 		}
 
 	}else{
-		$id = proxID("cadastros_pharma");
+		$id = proxID("cadastros");
 	}
 }
 ?>
@@ -70,27 +58,9 @@ $(document).ready(function(){
 				required: true,
 				email: true
 			},
-			razao_social:{
-				required: function () {
-					return $("#tipo").val() === "farmaceutico";
-				}
+			funcao: {
+				required: true,
 			},
-			cnpj:{
-				required: function () {
-					return $("#tipo").val() === "farmaceutico";
-				}
-			},
-			profissao:{
-				required: function () {
-					return $("#tipo").val() === "prescritor";
-				}
-			},
-			conselho_de_classe:{
-				required: function () {
-					return $("#tipo").val() === "prescritor";
-				}
-			},
-
 			senha:{
 				required: function () {
 					return $("#acao").val() == "Incluir" || $("#alterarsenha").attr("checked") == true;
@@ -108,23 +78,8 @@ $(document).ready(function(){
 			nome:'Você não preencheu seu nome!',
 			email: {
 				required: 'Informe o e-mail',
-				email: 'Informe um email válido'
-			},
-			razao_social:{
-				required: "Informe a razão social"
-			},
-			cnpj:{
-				required: "Informe o CNPJ"
-			},
-			profissao:{
-				required: "Informe a profissão"
-			},
-			conselho_de_classe: {
-				required: "Informe o conselho de classe"
-			},
-			senha:{
-				required: 'Digite a senha',
-				minlength:'A senha deve conter no mínimo 6 caracteres'
+				email: 'Informe um email válido',
+				funcao: "Informe a função do usuário na diretoria"
 			},
 			senha2:{
 				required:'Repita a senha',
@@ -160,7 +115,7 @@ $(document).ready(function(){
 		<?php if ($acao == "Alterar" && !$dados['id']): ?>
 		<div class="note-msg">Registro foi excluído ou não foi encontrado.</div>
 		<?php else: ?>
-			<form name="form1" id="form1" method="post" action="<?php echo $url; ?>cadastrosPharmaManutencao/<?php echo $acao ?>/<?php echo $id ?>" onsubmit="lockButton(this);">
+			<form name="form1" id="form1" method="post" action="<?php echo $url; ?>cadastrosManutencao/<?php echo $acao ?>/<?php echo $id ?>" onsubmit="lockButton(this);">
 				<input type="hidden" name="acao" value="<?php echo $acao ?>" id="acao"/>
 				<input type="hidden" name="id[]" value="<?php echo $id ?>" id="id[]" />
 				<input type="hidden" name="data_aprovacao" value="<?php echo $data_aprovacao ?>" />
@@ -172,21 +127,17 @@ $(document).ready(function(){
 				</div>
 				<div class="contentManutencao right">
 					<div class="t-prod" id="menu">
-						<h2>Cadastros Pharma &gt; <?php echo $acao; ?></h2>
-						<input type="button" onclick="location.href='<?php echo $url; ?>cadastrosPharma'" class="btn-padrao voltar" id="voltar" value="Voltar" />
-						<input name="reiniciar" type="button" id="reiniciar" value="Reiniciar" class="btn-padrao" onclick="location.href=''" />
-						<?php if($acao=="Alterar"): ?><input name="excluir" type="button" id="excluir" value="Excluir" class="btn-padrao excluir" onclick="deleteSelected(<?php echo $id ?>, 'cadastros_pharma', '<?php echo $url; ?>cadastrosPharma', true);" /><?php endif; ?>
+						<h2>Cadastros E.C União Santa Luiza &gt; <?php echo $acao; ?></h2>
+						<input type="button" onclick="location.href='<?php echo $url; ?>cadastros'" class="btn-padrao voltar" id="voltar" value="Voltar" />
+						<?php if($acao=="Alterar"): ?><input name="excluir" type="button" id="excluir" value="Excluir" class="btn-padrao excluir" onclick="deleteSelected(<?php echo $id ?>, 'cadastros', '<?php echo $url; ?>cadastros', true);" /><?php endif; ?>
 						<input name="gravar" type="submit" id="gravar" value="Salvar" class="btn-padrao pedidos" />
-						<input name="gravar" type="button" id="gravar" value="Salvar e Continuar Editando" class="btn-padrao pedidos" onclick="saveContinue();" />
 						<input name="carregando" type="button" id="carregando" value="Carregando..." class="gravar btn-padrao" disabled="disabled" />
 					</div>
 					<div class="t-prod HighIndex" id="navContainer">
 						<h2>Cadastros Pharma &gt; <?php echo $acao; ?></h2>
-						<input type="button" onclick="location.href='<?php echo $url; ?>cadastrosPharma'" class="btn-padrao voltar" id="voltar" value="Voltar" />
-						<input name="reiniciar" type="button" id="reiniciar" value="Reiniciar" class="btn-padrao" onclick="location.href=''" />
-						<?php if($acao=="Alterar"): ?><input name="excluir" type="button" id="excluir" value="Excluir" class="btn-padrao excluir" onclick="deleteSelected(<?php echo $id ?>, 'cadastros_pharma', '<?php echo $url; ?>cadastrosPharma', true);" /><?php endif; ?>
+						<input type="button" onclick="location.href='<?php echo $url; ?>cadastros'" class="btn-padrao voltar" id="voltar" value="Voltar" />
+						<?php if($acao=="Alterar"): ?><input name="excluir" type="button" id="excluir" value="Excluir" class="btn-padrao excluir" onclick="deleteSelected(<?php echo $id ?>, 'cadastros', '<?php echo $url; ?>cadastros', true);" /><?php endif; ?>
 						<input name="gravar" type="submit" id="gravar" value="Salvar" class="btn-padrao pedidos" />
-						<input name="gravar" type="button" id="gravar" value="Salvar e Continuar Editando" class="btn-padrao pedidos" onclick="saveContinue();" />
 						<input type="hidden" name="continue" value="0" id="continue"/>
 						<input name="carregando" type="button" id="carregando" value="Carregando..." class="gravar btn-padrao" disabled="disabled" />
 					</div>
@@ -203,14 +154,8 @@ $(document).ready(function(){
 											<label>ID:</label>
 											<label for="nome">Nome: <span class="req">*</span></label>
 											<label for="email">E-mail: <span class="req">*</span></label>
-											<label for="tipo">Tipo: <span class="req">*</span></label>
+											<label for="tipo">Função: <span class="req">*</span></label>
 											<label for="aprovado">Aprovado: <span class="req">*</span></label>
-
-											<label class="tipo-farmaceutico" for="razao_social">Razão Social: <span class="req">*</span></label>
-											<label class="tipo-farmaceutico" for="cnpj">CNPJ: <span class="req">*</span></label>
-
-											<label class="tipo-prescritor" for="profissao">Área de atuação: <span class="req">*</span></label>
-											<label class="tipo-prescritor" for="conselho_de_classe">Conselho de Classe: <span class="req">*</span></label>
 
 											<?php if($acao=='Alterar'): ?><label for="alterarsenha">Alterar Senha: </label><?php endif; ?>
 											<div class="senha<?php if($acao=='Alterar') echo ' hide'; ?>">
@@ -223,21 +168,11 @@ $(document).ready(function(){
 											<input type="text" name="id" id="id" value="<?php echo $id ?>" readonly="readonly" />
 											<input type="text" name="nome" id="nome" value="<?php echo $nome ?>" />
 											<input type="text" name="email" id="email" value="<?php echo $email ?>" />
-											<select name="tipo" id="tipo">
-												<option value="farmaceutico">Farmacêutico</option>
-												<option value="prescritor" <?php if($tipo === "prescritor") echo 'selected="selected"' ?>>Prescritor</option>
-											</select>
+											<input type="text" name="funcao" id="funcao" value="<?php echo $funcao ?>" />
 											<select name="aprovado" id="aprovado">
 												<option value="0">Não</option>
 												<option value="1" <?php if($aprovado === "1") echo 'selected="selected"' ?>>Sim</option>
 											</select>
-
-											<input class="tipo-farmaceutico" type="text" name="razao_social" id="razao_social" value="<?php echo utf8_encode($razao_social)   ?>" />
-											<input class="tipo-farmaceutico" type="text" name="cnpj" id="cnpj" value="<?php echo $cnpj ?>" alt="cnpj" />
-
-											<input class="tipo-prescritor" type="text" name="profissao" id="profissao" value="<?php echo $profissao ?>" />
-											<input class="tipo-prescritor" type="text" name="conselho_de_classe" id="conselho_de_classe" value="<?php echo $conselho_de_classe ?>" />
-
 											<?php if($acao=='Alterar'): ?><input type="checkbox" name="alterarsenha" id="alterarsenha" value="1" /><?php endif; ?>
 											<div class="senha<?php if($acao=='Alterar') echo ' hide'; ?>">
 												<input type="password" name="senha" id="senha" autocomplete="off" />

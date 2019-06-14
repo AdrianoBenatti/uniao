@@ -2,8 +2,8 @@
 session_start();
 include("admin/functions.php");
 $page = $_GET['page']? $_GET['page']: 'home';
-$url = getConfig("url_site_pharma");
-$mediaUrl = getConfig("url_site_pharma").'media/';
+$url = getConfig("url_site_uniao");
+$mediaUrl = getConfig("url_site_uniao").'media/';
 ob_start(); // Novo buffer
 if(!file_exists("$page.php")){
 	header('HTTP/1.0 404 Not Found');

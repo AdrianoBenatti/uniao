@@ -11,6 +11,7 @@ include "lib/WideImage.php";
 
 $connect = conecta();
 
+$url = getConfig("url_admin_uniao");
 $page = $_GET['page']? $_GET['page']: '';
 $id = $_GET['id']? $_GET['id']: '';
 #$redirectUrl = $_SERVER['REQUEST_URI'];

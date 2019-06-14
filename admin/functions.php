@@ -30,8 +30,8 @@ function conecta(){
 		mysql_select_db("uniao_db", $conexao); #desenvolvimento
 	}
 	if(APPLICATION_ENV=='testing'){
-		$conexao = @mysql_pconnect("localhost", "apta", "Apta@9630");
-		mysql_select_db("pharmaspecial_2015", $conexao); #teste
+		$conexao = @mysql_pconnect("localhost", "", "");
+		mysql_select_db("", $conexao); #teste
 	}
 	if(APPLICATION_ENV=='production'){
 		$conexao = mysql_pconnect("localhost", "pharmasp_db", "52l5k&5Mf*1x");

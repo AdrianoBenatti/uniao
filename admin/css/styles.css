@@ -33,7 +33,7 @@
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{font-family:'Open Sans', sans-serif;}
 
-body {background:#ecf0f5; font-size:12px; font-family:'Open Sans', sans-serif; color:#373435; height:100%; overflow-y:scroll;}
+body {background: url("../images/gramado.jpg")top center; font-size:12px; font-family:'Open Sans', sans-serif; color:#373435; height:100%; overflow-y:scroll;}
 
 img {border:0; vertical-align:TOP;}
 
@@ -129,16 +129,15 @@ td.ord {cursor:move; background: url(../images/move.png) center center no-repeat
 .login #login1 .entrar:hover {background:#e7e7e7;}
 .login #login1 .entrar:active {box-shadow:0 0 3px #666 inset;}
 
-#topo {background: #1a2226;}
+#topo {background: #fb7f36;}
 #topo .user {text-align:right; color: #eee; white-space: nowrap; display: inline-block; line-height: 50px;}
 #topo .user span {font-weight:bold;}
 #topo .user a {color:#dd4b39;}
 
-#logo {background: #fff; padding:0 20px; overflow:hidden; border-top: 5px solid #357ca5;}
+#logo {background: #fb7f36; padding:0 20px; overflow:hidden; }
 #logo::before {content: ""; display: inline-block; height: 95px; vertical-align: middle;}
 #logo .logo {display: inline-block; vertical-align: middle; margin-right: 20px;}
-#logo .logo img.pic{height: 60px;}
-#logo .logo img.pharma{height: 50px;}
+#logo .logo img.uniao{height: 50px;}
 
 .menu {padding: 0 20px; background:#1a2226; margin:0 auto 10px; clear:both; overflow:hidden; width:100%; max-width: 1340px;}
 .menu ul {display:inline-block; overflow:hidden; vertical-align: top;}

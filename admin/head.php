@@ -1,7 +1,7 @@
-?php header('Content-Type: text/html; charset=utf-8'); ?>
+<?php header('Content-Type: text/html; charset=utf-8'); ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-
+<?php $url = getConfig("url_admin_uniao"); ?>
 <!--
 <meta http-equiv="cache-control" content="max-age=0" />
 <meta http-equiv="cache-control" content="no-cache" />
