@@ -11,13 +11,16 @@
 
 				<h2>Última apresentação</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/02.06.19-2.jpeg">
+					<img src="<?php echo $url ?>images/jogos/15.06.2019-2.jpeg">
 				</figure>
 				<p>
-					Jogo muito complicado contra o time do Guarapari,<br>
-					poucas chances de gol, e pouca eficiência<br>
-					no toque de bola comprometeram o bom futebol<br>
-					e a vitória.
+					É CAMPEÃOOOOO!<br>
+					União Santa Luiza foi vencedor do festivel<br>
+					no campo do São Jorge. Com ótimo futebol<br>
+					apresentado, o empate saiu barato para <br>
+					o time do Chelsea. Porém nos penaltis<br>
+					brilhou a estrela do goleiro Elton<br>
+					e levantamos o caneco.
 				</p>
 			</div>
 
@@ -25,14 +28,10 @@
 
 				<h2>Próximo compromisso</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/06.06.19.jpeg">
+					<!--<img src="<?php echo $url ?>images/jogos/06.06.19.jpeg">-->
 				</figure>
 				<p>
-					Nesta quinta feira o time do União<br>
-					entrará em campo no estádio Municipal do Progresso.<br>
-					Iremos enfretar outro bom time e precisando da <br>
-					vitória e de voltar a presentar o bom futebol<br>
-					iremos em busca de um bom jogo.
+					INDEFINIDO!
 				</p>
 			</div>
 		</div>
