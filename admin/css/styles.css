@@ -74,6 +74,8 @@ label.front {clear:none; width: auto; margin: 0 11px 11px 20px;}
 .cke_skin_kama {margin: 0 0 10px;}
 
 input, select, textarea {float:left; width:100%; margin:0 0 10px; display:block; font-size:14px; border:1px solid #ccc; height: 34px; padding: 0 5px;}
+#golsmanutencao {float:left; width:20%!important; margin:0 0 10px; display:block; font-size:14px; border:1px solid #ccc; height: 34px; padding: 0 5px;}
+#gols_artilheiro {float:left; width:20%!important; margin:0 0 10px; display:block; font-size:14px; border:1px solid #ccc; height: 34px; padding: 0 5px;}
 select {float:none; width:20%; padding: 0 0 0 2px;}
 select.front {float:left;}
 textarea {height:175px; resize: none;}

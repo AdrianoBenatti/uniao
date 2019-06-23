@@ -3,8 +3,7 @@ include "functions.php";
 
 $id = $_GET['id'];
 $login = $_GET['login'];
-$acao = $_GET['acao'];
-$tabela = $_GET['tabela'];
+
 
 $connect = conecta();
 

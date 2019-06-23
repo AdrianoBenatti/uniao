@@ -120,7 +120,7 @@ $(document).ready(function(){
 				<input type="hidden" name="id[]" value="<?php echo $id ?>" id="id[]" />
 				<input type="hidden" name="data_aprovacao" value="<?php echo $data_aprovacao ?>" />
 				<div class="sidebar left">
-					<h2>Cadastros Pharma &gt; <?php echo $acao; ?></h2>
+					<h2>Cadastros E.C União Santa Luiza &gt; <?php echo $acao; ?></h2>
 					<ul>
 						<li id="atabs-1" class="hover"><a href="#tabs-1" onClick="CngClass(this);">Geral</a></li>
 					</ul>
