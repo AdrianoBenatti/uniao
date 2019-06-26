@@ -533,3 +533,5 @@ input.error, textarea.error, select.error, iframe.error {background:#f99; box-sh
 .wrapDownload .conteudoDownload [type=radio]{margin: 0 5px 0 0;}
 .wrapDownload .conteudoDownload [type=text]{margin: 0 0 0 5px;}
 .conteudoDownload .botaoDownload {width: 115px; height: 30px; display: block; float: none; background: #1c98e7; color: #FFFFFF; border-radius: 5px; margin: 0 auto;}
+
+#aux-imagem { display: flex; flex-wrap: wrap; flex-direction: column;}

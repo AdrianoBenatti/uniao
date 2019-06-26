@@ -8,7 +8,7 @@ $(document).ready(function() {
 <div id="conteudo">
 	<div class="center">
 		<div class="header">
-			<h1>Usuários</h1>
+			<h1>Usuários E.C União Santa Luiza</h1>
 			<div class="buttons">
 				<input type="button" onclick="location.href='<?php $url; ?>usuariosManutencao/Incluir/0'" class="btn-padrao criar" value="Novo" />
 				<input type="button" onclick="javascript:self.print();" class="btn-padrao pedidos" value="Imprimir" />

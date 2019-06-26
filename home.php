@@ -11,16 +11,13 @@
 
 				<h2>Última apresentação</h2>
 				<figure>
-					<img src="<?php echo $url ?>images/jogos/15.06.2019-2.jpeg">
+					<img src="<?php echo $url ?>images/jogos/25.06.2019-2.jpeg">
 				</figure>
 				<p>
-					É CAMPEÃOOOOO!<br>
-					União Santa Luiza foi vencedor do festivel<br>
-					no campo do São Jorge. Com ótimo futebol<br>
-					apresentado, o empate saiu barato para <br>
-					o time do Chelsea. Porém nos penaltis<br>
-					brilhou a estrela do goleiro Elton<br>
-					e levantamos o caneco.
+					União Santa Luiza enfrrentou o bom time do<br>
+					Las Palmas. O time não foi muito bem e cometeu<br>
+					alguns erros, porém continuamos em preparação<br>
+					para o campeonato amador de Nova Odessa.
 				</p>
 			</div>
 
