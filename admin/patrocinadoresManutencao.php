@@ -9,20 +9,8 @@ if ($_POST) {
 	}
 	$id = $_GET['id'];
 	$dataAtual = date('Y-m-d');
-	$extensao = explode('.', $nome_imagem);
 
 	if (!empty($nome_imagem)){
-		if ($extensao[1] == 'pdf') {
-			$nome_imagem = utf8_encode($nome_imagem);
-			$tempfile = $temp_files . $nome_imagem;
-			$nome_imagem = $id."_".retirar_caracteres_especiais($nome_imagem);
-			if (file_exists($tempfile)){
-				$newFile = $local_files . $nome_imagem;
-				copy($tempfile, $newFile);
-				unlink($tempfile);
-			}
-
-		} else {
 			$nome_imagem = utf8_encode($nome_imagem);
 			$tempfile = $temp_files . $nome_imagem;
 			$nome_imagem = $id."_".retirar_caracteres_especiais($nome_imagem);
@@ -36,24 +24,24 @@ if ($_POST) {
 				}
 				unlink($tempfile);
 			}
-		}
+
 	}else{
 		$nome_imagem = $nome_imagem_bd;
 	}
 
 	if (!empty($nome_imagem2)){
 		$nome_imagem2 = utf8_encode($nome_imagem2);
-		$tempfile = $temp_files . $nome_imagem2;
+		$tempfile2 = $temp_files . $nome_imagem2;
 		$nome_imagem2 = $id."_".retirar_caracteres_especiais($nome_imagem2);
-		if (file_exists($tempfile)){
+		if (file_exists($tempfile2)){
 			$newFile = $local_files . $nome_imagem2;
-			$image = WideImage::load($tempfile);
+			$image = WideImage::load($tempfile2);
 			$image = $image->resize(900, null, 'outside', 'down')->saveToFile($newFile);
 			if ($nome_imagem2!=$nome_imagem2_bd && !empty($nome_imagem2_bd)){
 				$file = $local_files . $nome_imagem2_bd;
 				if (file_exists($file)) unlink($file);
 			}
-			unlink($tempfile);
+			unlink($tempfile2);
 		}
 	}else{
 		$nome_imagem2 = $nome_imagem2_bd;
@@ -106,8 +94,12 @@ if ($_POST) {
 				this.defaultShowErrors();
 			},
 			rules: {
+				nome: "required",
+				imagem: "required"
 			},
 			messages: {
+				nome: "Preencha o nome do patrocinador!",
+				imagem: "Selecione a imagem!"
 			}
 		});
 		flutua();
@@ -129,7 +121,7 @@ if ($_POST) {
 						$('#upload.imagem .thumb').remove();
 						$('#upload.imagem').append(
 							'<div class="thumb">'+
-							'<img src="<?php echo $mediaUrl ?>temp/'+json.fileName+'" height="100" />'+
+							'<img src="<?php echo $url . $mediaUrl ?>temp/'+json.fileName+'" height="100" />'+
 							'</div>'
 						);
 						$('#' + file.id).fadeOut();
@@ -155,10 +147,10 @@ if ($_POST) {
 				FileUploaded: function(up, file, info) {
 					try{
 						json = JSON.parse(info.response);
-						$('#upload.imagem2 .thumb').remove();
-						$('#upload.imagem2').append(
-							'<div class="thumb">'+
-							'<img src="<?php echo $mediaUrl ?>temp/'+json.fileName+'" height="100" />'+
+						$('#upload2.imagem2 .thumb2').remove();
+						$('#upload2.imagem2').append(
+							'<div class="thumb2">'+
+							'<img src="<?php echo $url . $mediaUrl ?>temp/'+json.fileName+'" height="100" />'+
 							'</div>'
 						);
 						$('#' + file.id).fadeOut();
@@ -218,7 +210,7 @@ if ($_POST) {
 											<label>ID:</label>
 											<label for="nome">nome: <span class="req">*</span></label>
 											<label for="imagem" style="margin: 0 0 95px;">Imagem: <span class="req"></span></label>
-											<label for="imagem2" class="upl">Imagem: <span class="req"></span></label>
+											<label for="imagem2" style="margin: 0 0 95px;">Imagem: <span class="req"></span></label>
 										</td>
 
 										<td>
@@ -231,33 +223,33 @@ if ($_POST) {
 												<a href="javascript:;" id="imagem" class="plup_button">SELECIONAR IMAGEM</a>
 												<div class="clear"></div>
 												<div class="thumb">
-													<?php if (!empty($imagem)):
-														$ext_imagem = explode('.', $imagem);
-														if($ext_imagem[1] != 'pdf'):?>
-															<img src="<?php echo $url."../media/patrocinadores/thumb-".$imagem; ?>" height="100" />
-														<?php else: ?>
-															<p style="margin-left: 10px;"> <?php echo $imagem; ?>  </p>
-														<?php endif; ?>
+													<?php
+														$sql = "SELECT imagem1 FROM patrocinadores";
+														$result = mysql_query($sql);
+														$registro = mysql_fetch_assoc($result);
+														$imagem = $registro['imagem1'];
+														?>
+													<?php if($imagem): ?>
+														<img src="<?php echo $url."../media/patrocinadores/".$imagem; ?>" height="100" />
 													<?php endif; ?>
 												</div>
+
 											</div>
 											<input type="hidden" name="nome_imagem" id="nome_imagem" value="" />
-											<input type="hidden" name="nome_imagem_bd" id="nome_imagem_bd" value="<?php echo $imagem; ?>" />
+											<input type="hidden" name="nome_imagem_bd" id="nome_imagem_bd" value="<?php echo $imagem ?>" />
 											<div class="clear"></div>
 
-											<div id="upload" class="single imagem2">
+											<div id="upload2" class="single imagem2">
 												<a href="javascript:;" id="imagem2" class="plup_button">SELECIONAR IMAGEM</a>
 												<div class="clear"></div>
-												<div class="thumb">
+												<div class="thumb2">
 													<?php if($imagem2): ?>
-														<img src="<?php echo $url."../media/patrocinadores/thumb-".$imagem2; ?>" height="100" />
+														<img src="<?php echo $url."../media/patrocinadores/".$imagem2; ?>" height="100" />
 													<?php endif; ?>
 												</div>
 											</div>
-
-
 											<input type="hidden" name="nome_imagem2" id="nome_imagem2" value="" />
-											<input type="hidden" name="nome_imagem2_bd" id="nome_imagem2_bd" value="<?php echo $imagem2 ;?>" />
+											<input type="hidden" name="nome_imagem2_bd" id="nome_imagem2_bd" value="<?php echo $imagem2 ?>" />
 											<div class="clear"></div>
 										</td>
 									</tr>

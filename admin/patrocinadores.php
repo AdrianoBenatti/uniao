@@ -1,5 +1,11 @@
 <?php autorizar("patrocinadores"); ?>
-<?php $query = mysql_query("SELECT * FROM patrocinadores ORDER BY id ASC", $connect); ?>
+<?php $query = mysql_query("SELECT * FROM patrocinadores ORDER BY id ASC", $connect);
+$sql = "SELECT imagem1 FROM patrocinadores";
+$result = mysql_query($sql);
+$registro = mysql_fetch_assoc($result);
+$imagem = $registro['imagem1'];
+?>
+
 <script>
 	$(document).ready(function() {
 		generateDataTable('patrocinadores','id','desc');
@@ -43,8 +49,8 @@
 						<td width="2%" align="center" class="check"><input type="checkbox" name="id[]" value="<?php echo $id ?>" id="id[]" /></td>
 						<td width="6%" align="center" onClick="goTo('<?php echo $altlink ?>');"><?php echo $id ?></td>
 						<td width="30%" align="left" onClick="goTo('<?php echo $altlink ?>');"><?php echo $nome?></td>
-						<td width="30%" align="left" onClick="goTo('<?php echo $altlink ?>');"> <?php if($imagem): ?><img src="<?php echo $url."../media/patrocinadores/thumb-".$imagem; ?>" style="margin:0 0 10px 10px;" /><?php endif; ?></td>
-						<td width="30%" align="left" onClick="goTo('<?php echo $altlink ?>');"> <?php if($imagem2): ?><img src="<?php echo $url."../media/patrocinadores/thumb-".$imagem2; ?>" style="margin:0 0 10px 10px;" /><?php endif; ?></td>
+						<td width="30%" align="left" onClick="goTo('<?php echo $altlink ?>');"> <?php if($imagem): ?><img src="<?php echo $url."../media/patrocinadores/".$imagem; ?>" style="margin:0 0 10px 10px;  height: 50px;" /><?php endif; ?></td>
+						<td width="30%" align="left" onClick="goTo('<?php echo $altlink ?>');"> <?php if($imagem2): ?><img src="<?php echo $url."../media/patrocinadores/".$imagem2; ?>" style="margin:0 0 10px 10px; height: 50px;" /><?php endif; ?></td>
 						<td width="2%" align="center"><a href="<?php echo $altlink ?>" title="Alterar"><img src="images/alterar.png" alt="Alterar" /></a></td>
 					</tr>
 				<?php } ?>

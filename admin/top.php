@@ -11,6 +11,7 @@
 						<li><a href="<?php echo $url; ?>usuarios">Usuários</a></li>
 						<li><a href="<?php echo $url; ?>jogadores">Jogadores</a></li>
 						<li><a href="<?php echo $url; ?>patrocinadores">Patrocinadores</a></li>
+						<li><a href="<?php echo $url; ?>historia">História</a></li>
 						<li><a href="<?php echo $url; ?>artilheiros">Artilheiros</a></li>
 						<li><a href="<?php echo $url; ?>gols">Gols</a></li>
 					</ul>

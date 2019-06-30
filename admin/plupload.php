@@ -228,11 +228,11 @@ if($uploaded){
 
 				$query = mysql_query("INSERT INTO $tabela (id, arquivo, numero_nota, protocolo, tipo, data_emissao, cnpj, origem)
 												VALUES('$id', '$fileName', '$numero_nota', '$protocolo', '$tipo', '$dataEmissao', '$cnpj', '$origem')", $connect) or die(mysql_error());
-				
+
 				$destino = $basePath.'media/nfe/'.$fileName;
 
 				rename($targetFile, $destino);
-				
+
 				break;
 
 			default:
