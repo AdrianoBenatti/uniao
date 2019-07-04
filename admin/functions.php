@@ -34,8 +34,8 @@ function conecta(){
 		mysql_select_db("", $conexao); #teste
 	}
 	if(APPLICATION_ENV=='production'){
-		$conexao = mysql_pconnect("localhost", "pharmasp_db", "52l5k&5Mf*1x");
-		mysql_select_db("pharmasp_special", $conexao); #producao
+		$conexao = mysql_pconnect("localhost", "", "");
+		mysql_select_db("", $conexao); #producao
 	}
 	return $conexao;
 }

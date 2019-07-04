@@ -1,65 +1,31 @@
+<?php
+$title = "Patrocinadores";
+$id = anti_sql_injection($_GET['id']) ? anti_sql_injection($_GET['id']) : 1;
+
+?>
+
+
 <div class="home">
 	<div class="ultimo-jogo">
 
-		<div class="patrocinadores">
 
-			<div class="centraliza patrocinio primeiro">
-				<h2>Academia Músculo em Ação</h2>
-				<div class="jogo-anterior">
-					<figure>
-						<img src="<?php echo $url ?>images/patrocinadores/musculoemacao.jpg">
-					</figure>
+		<?php
+		$query = mysql_query("SELECT * FROM patrocinadores") or die (mysql_error());
+				while ($v = mysql_fetch_array($query)): ?>
+			<div class="patrocinadores">
+				<div class="centraliza patrocinio primeiro">
+					<h2><?php echo($v['nome']) ?></h2>
+					<div class="jogo-anterior">
+						<figure>
+							<img src="<?php echo $url . "media/patrocinadores/" . $v['imagem']; ?>" alt="<?php echo($v['nome']) ?>"/>
+						</figure>
+						<figure>
+							<img src="<?php echo $url . "media/patrocinadores/" . $v['imagem2']; ?>" alt="<?php echo($v['nome']) ?>"/>
+						</figure>
+					</div>
 				</div>
 			</div>
-
-			<div class="centraliza patrocinio">
-				<h2>Recanto do Pastel</h2>
-				<div class="jogo-anterior">
-					<figure>
-						<img src="<?php echo $url ?>images/patrocinadores/recantodopastel.jpg">
-					</figure>
-				</div>
-			</div>
-
-			<div class="centraliza patrocinio">
-				<h2>Camiseteria RA</h2>
-				<div class="jogo-anterior">
-					<figure>
-						<img src="<?php echo $url ?>images/patrocinadores/camiseteria.jpg">
-					</figure>
-				</div>
-			</div>
-
-			<div class="centraliza patrocinio">
-				<h2>Pizzaria Gold</h2>
-				<div class="jogo-anterior">
-					<figure>
-						<img src="<?php echo $url ?>images/patrocinadores/pizzaria.jpg">
-					</figure>
-				</div>
-			</div>
-
-			<div class="centraliza patrocinio">
-				<h2>Polishop.com.vc - <b>tel: 19 99742-9661</b></h2>
-				<div class="jogo-anterior">
-					<figure>
-						<img src="<?php echo $url ?>images/patrocinadores/polishop.jpg">
-						<img src="<?php echo $url ?>images/patrocinadores/polishop2.jpg">
-						<img src="<?php echo $url ?>images/patrocinadores/polishop3.jpg">
-					</figure>
-				</div>
-			</div>
-
-			<div class="centraliza patrocinio">
-				<h2>Ponto X Lanches</h2>
-				<div class="jogo-anterior">
-					<figure>
-						<img src="<?php echo $url ?>images/patrocinadores/pontox.jpg">
-						<img src="<?php echo $url ?>images/patrocinadores/pontox2.jpg">
-					</figure>
-				</div>
-			</div>
-		</div>
+			<?php endwhile; ?>
 
 
 	</div>

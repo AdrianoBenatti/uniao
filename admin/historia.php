@@ -9,7 +9,7 @@
 <div id="conteudo">
 	<div class="center">
 		<div class="header">
-			<h1>Jogadores E.C União Santa Luiza</h1>
+			<h1>História E.C União Santa Luiza</h1>
 			<div class="buttons">
 				<input type="button" onclick="location.href='<?php echo $url; ?>historiaManutencao/Incluir/0'" class="btn-padrao criar" value="Novo" />
 				<input type="button" onclick="javascript:self.print();" class="btn-padrao pedidos" value="Imprimir" />

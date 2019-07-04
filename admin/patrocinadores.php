@@ -1,9 +1,9 @@
 <?php autorizar("patrocinadores"); ?>
 <?php $query = mysql_query("SELECT * FROM patrocinadores ORDER BY id ASC", $connect);
-$sql = "SELECT imagem1 FROM patrocinadores";
+/*$sql = "SELECT imagem1 FROM patrocinadores";
 $result = mysql_query($sql);
 $registro = mysql_fetch_assoc($result);
-$imagem = $registro['imagem1'];
+$imagem = $registro['imagem1'];*/
 ?>
 
 <script>

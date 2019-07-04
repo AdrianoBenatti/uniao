@@ -73,11 +73,13 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .ultimo-jogo .centraliza .prox-jogo p { font-weight: bold; font-size: 16px; height: 150px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 10px 40px; text-align: left;}
 .ultimo-jogo .centraliza .prox-jogo	 h2 { font-size: 30px; height: 40px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 .ultimo-jogo .centraliza h2 { font-size: 30px; height: auto; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
-.home .ultimo-jogo .patrocinadores .centraliza.patrocinio { padding: 40px; text-align: center; margin: 0 auto; width: 900px; justify-content: space-between; display: block;}
+.home .ultimo-jogo .patrocinadores .centraliza.patrocinio { padding: 40px 0 80px 0; text-align: center; margin: 0 auto; width: 900px; justify-content: space-between; display: block;}
 .home .ultimo-jogo .patrocinadores .centraliza.patrocinio figure { display: flex;}
+.home .ultimo-jogo .patrocinadores .centraliza.patrocinio figure img { width: 450px; height: 300px; margin: 0 30px 0 0; border-radius: 10px; border: 3px solid #fb7f36; }
+.home .ultimo-jogo .patrocinadores .centraliza .jogo-anterior { display: flex; justify-content: space-between; align-items: center;}
 .home .ultimo-jogo .patrocinadores .centraliza.patrocinio.primeiro { padding: 150px 0 0 0;}
 
-.patrocinadores { width: 100%; height: auto; background: url("../images/gramado.jpg")center repeat; }
+.patrocinadores { width: 100%; height: auto; background: url("../images/gramado.jpg")center repeat; padding: 0 0 100px 0;}
 
 
 .ultimo-jogo .centraliza .wrap-fotos { width: 900px; height: 350px; padding: 50px 0; margin: 0 auto; text-align: center; flex-wrap: wrap;}
@@ -215,6 +217,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 
 	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio { padding: 40px; text-align: center; margin: 0 auto; width: 100%; justify-content: space-between; display: block;}
 	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio figure { display: flex; flex-wrap: wrap;}
+	.home .ultimo-jogo .patrocinadores .centraliza .jogo-anterior figure img { width: 450px; height: 300px;}
 	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio.primeiro { padding: 150px 0 0 0; width: 100%;}
 	.home .ultimo-jogo .patrocinadores h2 { height: auto; font-size: 30px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 
