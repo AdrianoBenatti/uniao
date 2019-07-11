@@ -1,5 +1,5 @@
 <?php
-$title = "Patrocinadores";
+$title = "Patrocinadores - ";
 $id = anti_sql_injection($_GET['id']) ? anti_sql_injection($_GET['id']) : 1;
 
 ?>

@@ -1,3 +1,12 @@
+<?php
+$title = "Gols - ";
+$id = anti_sql_injection($_GET['id']) ? anti_sql_injection($_GET['id']) : 1;
+
+$query = mysql_query("SELECT * FROM gols") or die (mysql_error());
+$gols = mysql_fetch_array($query);
+?>
+
+
 <script>
 
 $(function () {
@@ -22,7 +31,7 @@ $(function () {
 
 		<div class="contador reveal" id="contador" data-delay="400">
 			<p>Gols</p>
-			<div id="number">328</div>
+			<div id="number"><?php echo($gols['gols']) ?></div>
 		</div>
 
 	</div>

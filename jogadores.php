@@ -1,39 +1,20 @@
+<?php
+$title = "Jogadores - ";
+$id = anti_sql_injection($_GET['id']) ? anti_sql_injection($_GET['id']) : 1;
+
+$query = mysql_query("SELECT * FROM jogadores  ORDER BY id ASC") or die (mysql_error());
+$j = mysql_fetch_array($query)
+?>
 
 <div class="ultimo-jogo">
 
-<div class="jogadores">
+	<div class="jogadores">
 
-<span>Goleiros:</span>
 
-<p>Elton</p>
+		<?php while ($j = mysql_fetch_array($query)): ?>
+				<?php echo "<p><b>Nome Jogador:</b> " . $j['nome'] . " - " . $j['posicao'] . "</p>"; ?>
+		<?php endwhile; ?>
 
-<br><br>
-
-<span>Laterais: Dir. Esq.</span><br>
-
-<p>L.Gustavo, Ze, Bruno, Felipe Noronha</p>
-
-<br><br>
-
-<span>Zagueiros:</span><br> 
-
-<p>Leo, Dedão, Renan, Pablo, Liu</p>
-
-<br><br>
-
-<span>Meio campo:</span><br>
-
-<p>Gustavo, Bruninho, Micael, Du, Roni</p>
-
-<br><br>
-
-<span>Ataque:</span><br> 
-
-<p>Edgar, Felipinho, Iago, Binotte</p>
-
-<br><br>
-
-<span>Tec: David N. dos Anjos</span>
 
 	</div>
 </div>
