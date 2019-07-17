@@ -1,6 +1,6 @@
 <?php
-autorizar("patrocinadores");
-$local_files = "../media/patrocinadores/";
+autorizar("fotos");
+$local_files = "../media/fotos/";
 $temp_files = "../media/temp/";
 
 if ($_POST) {
@@ -11,60 +11,40 @@ if ($_POST) {
 	$dataAtual = date('Y-m-d');
 
 	if (!empty($nome_imagem)){
-			$nome_imagem = utf8_encode($nome_imagem);
-			$tempfile = $temp_files . $nome_imagem;
-			$nome_imagem = $id."_".retirar_caracteres_especiais($nome_imagem);
-			if (file_exists($tempfile)){
-				$newFile = $local_files . $nome_imagem;
-				$image = WideImage::load($tempfile);
-				$image = $image->resize(900, null, 'outside', 'down')->saveToFile($newFile);
-				if ($nome_imagem!=$nome_imagem_bd && !empty($nome_imagem_bd)){
-					$file = $local_files . $nome_imagem_bd;
-					if (file_exists($file)) unlink($file);
-				}
-				unlink($tempfile);
+		$nome_imagem = utf8_encode($nome_imagem);
+		$tempfile = $temp_files . $nome_imagem;
+		$nome_imagem = $id."_".retirar_caracteres_especiais($nome_imagem);
+		if (file_exists($tempfile)){
+			$newFile = $local_files . $nome_imagem;
+			$image = WideImage::load($tempfile);
+			$image = $image->resize(900, null, 'outside', 'down')->saveToFile($newFile);
+			if ($nome_imagem!=$nome_imagem_bd && !empty($nome_imagem_bd)){
+				$file = $local_files . $nome_imagem_bd;
+				if (file_exists($file)) unlink($file);
 			}
+			unlink($tempfile);
+		}
 
 	}else{
 		$nome_imagem = $nome_imagem_bd;
 	}
 
-	if (!empty($nome_imagem2)){
-		$nome_imagem2 = utf8_encode($nome_imagem2);
-		$tempfile2 = $temp_files . $nome_imagem2;
-		$nome_imagem2 = $id."_".retirar_caracteres_especiais($nome_imagem2);
-		if (file_exists($tempfile2)){
-			$newFile = $local_files . $nome_imagem2;
-			$image = WideImage::load($tempfile2);
-			$image = $image->resize(900, null, 'outside', 'down')->saveToFile($newFile);
-			if ($nome_imagem2!=$nome_imagem2_bd && !empty($nome_imagem2_bd)){
-				$file = $local_files . $nome_imagem2_bd;
-				if (file_exists($file)) unlink($file);
-			}
-			unlink($tempfile2);
-		}
-	}else{
-		$nome_imagem2 = $nome_imagem2_bd;
-	}
-
-
 
 	$data = array(
-		"nome" => $nome,
 		"imagem" => $nome_imagem,
-		"imagem2" => $nome_imagem2
+		"descricao" => $descricao
 	);
 
 	if($acao == "Incluir") $id = null;
 
-	$id = save($data, "patrocinadores", $id);
+	$id = save($data, "fotos", $id);
 
 
-	if(!$continue) header("Location: {$url}patrocinadores"); else header("Location: {$url}$page/Alterar/$id");
+	if(!$continue) header("Location: {$url}fotos"); else header("Location: {$url}$page/Alterar/$id");
 
 }else{
 	if ($acao == "Alterar") {
-		$sql = "SELECT * FROM patrocinadores WHERE id = $id";
+		$sql = "SELECT * FROM fotos WHERE id = $id";
 		$query = mysql_query($sql, $connect);
 		if ($dados = mysql_fetch_array($query)){
 			foreach($dados as $key=>$value) {
@@ -72,7 +52,7 @@ if ($_POST) {
 			}
 		}
 	}else{
-		$id = proxID("patrocinadores");
+		$id = proxID("fotos");
 	}
 }
 ?>
@@ -133,36 +113,6 @@ if ($_POST) {
 				}
 			}
 		}).init();
-
-
-		uploader = buildPlupload('imagem2', {
-			multi_selection: false,
-			filters : {
-				max_file_size : '100MB',
-				mime_types: [
-					{title : "Image files", extensions : "jpg,gif,png"}
-				]
-			},
-			init: {
-				FileUploaded: function(up, file, info) {
-					try{
-						json = JSON.parse(info.response);
-						$('#upload2.imagem2 .thumb2').remove();
-						$('#upload2.imagem2').append(
-							'<div class="thumb2">'+
-							'<img src="<?php echo $url . $mediaUrl ?>temp/'+json.fileName+'" height="100" />'+
-							'</div>'
-						);
-						$('#' + file.id).fadeOut();
-						$("#nome_imagem2").val(json.fileName);
-					} catch (e) {
-						jAlert('Erro ao realizar upload, tente novamente', 'Atenção');
-						console.log(e);
-					}
-				}
-			}
-		}).init();
-
 	});
 </script>
 <div class="center">
@@ -170,28 +120,28 @@ if ($_POST) {
 		<?php if ($acao == "Alterar" && !$dados['id']): ?>
 			<div class="note-msg">Registro foi excluído ou não foi encontrado.</div>
 		<?php else: ?>
-			<form name="form1" enctype="multipart/form-data" id="form1" method="post" action="<?php echo $url; ?>patrocinadoresManutencao/<?php echo $acao ?>/<?php echo $id ?>" onsubmit="lockButton(this);">
+			<form name="form1" enctype="multipart/form-data" id="form1" method="post" action="<?php echo $url; ?>fotosManutencao/<?php echo $acao ?>/<?php echo $id ?>" onsubmit="lockButton(this);">
 				<input type="hidden" name="acao" value="<?php echo $acao ?>" id="acao"/>
 				<input type="hidden" name="id[]" value="<?php echo $id ?>" id="id[]" />
 				<div class="sidebar left">
-					<h2>Patrocinadores E.C União Santa Luiza &gt; <?php echo $acao; ?></h2>
+					<h2>Fotos E.C União Santa Luiza &gt; <?php echo $acao; ?></h2>
 					<ul>
 						<li id="atabs-1" class="hover"><a href="#tabs-1" onClick="CngClass(this);">Geral</a></li>
 					</ul>
 				</div>
 				<div class="contentManutencao right">
 					<div class="t-prod" id="menu">
-						<h2>Patrocinadores E.C União Santa Luiza &gt; <?php echo $acao; ?></h2>
-						<input type="button" onclick="location.href='<?php echo $url; ?>patrocinadores'" class="btn-padrao voltar" id="voltar" value="Voltar" />
-						<?php if($acao=="Alterar"): ?><input name="excluir" type="button" id="excluir" value="Excluir" class="btn-padrao excluir" onclick="deleteSelected(<?php echo $id ?>, 'patrocinadores', '<?php echo $url; ?>patrocinadores', true);" /><?php endif; ?>
+						<h2>Fotos E.C União Santa Luiza &gt; <?php echo $acao; ?></h2>
+						<input type="button" onclick="location.href='<?php echo $url; ?>fotos'" class="btn-padrao voltar" id="voltar" value="Voltar" />
+						<?php if($acao=="Alterar"): ?><input name="excluir" type="button" id="excluir" value="Excluir" class="btn-padrao excluir" onclick="deleteSelected(<?php echo $id ?>, 'fotos', '<?php echo $url; ?>fotos', true);" /><?php endif; ?>
 						<input name="gravar" type="submit" id="gravar" value="Salvar" class="btn-padrao pedidos" />
 						<input name="gravar" type="button" id="gravar" value="Salvar e Continuar Editando" class="btn-padrao pedidos" onclick="saveContinue();" />
 						<input name="carregando" type="button" id="carregando" value="Carregando..." class="gravar btn-padrao" disabled="disabled" />
 					</div>
 					<div class="t-prod HighIndex" id="navContainer">
-						<h2>Patrocinadores E.C União Santa Luiza &gt; <?php echo $acao; ?></h2>
-						<input type="button" onclick="location.href='<?php echo $url; ?>patrocinadores'" class="btn-padrao voltar" id="voltar" value="Voltar" />
-						<?php if($acao=="Alterar"): ?><input name="excluir" type="button" id="excluir" value="Excluir" class="btn-padrao excluir" onclick="deleteSelected(<?php echo $id ?>, 'patrocinadores', '<?php echo $url; ?>patrocinadores', true);" /><?php endif; ?>
+						<h2>Fotos E.C União Santa Luiza &gt; <?php echo $acao; ?></h2>
+						<input type="button" onclick="location.href='<?php echo $url; ?>fotos'" class="btn-padrao voltar" id="voltar" value="Voltar" />
+						<?php if($acao=="Alterar"): ?><input name="excluir" type="button" id="excluir" value="Excluir" class="btn-padrao excluir" onclick="deleteSelected(<?php echo $id ?>, 'fotos', '<?php echo $url; ?>fotos', true);" /><?php endif; ?>
 						<input name="gravar" type="submit" id="gravar" value="Salvar" class="btn-padrao pedidos" />
 						<input name="gravar" type="button" id="gravar" value="Salvar e Continuar Editando" class="btn-padrao pedidos" onclick="saveContinue();" />
 						<input type="hidden" name="continue" value="0" id="continue"/>
@@ -208,15 +158,14 @@ if ($_POST) {
 									<tr>
 										<td width="180">
 											<label>ID:</label>
-											<label for="nome">nome: <span class="req">*</span></label>
+											<label for="nome">Descrição: <span class="req">*</span></label>
 											<label for="imagem" style="margin: 0 0 95px;">Imagem: <span class="req"></span></label>
-											<label for="imagem2" style="margin: 0 0 95px;">Imagem: <span class="req"></span></label>
 										</td>
 
 										<td>
 											<input type="text" name="id" id="id" value="<?php echo $id ?>" readonly="readonly" />
 											<div class="clear"></div>
-											<input type="text" name="nome" id="nome" value="<?php echo $nome ?>" />
+											<input type="text" name="descricao" id="descricao" value="<?php echo $descricao ?>" />
 											<div class="clear"></div>
 
 											<div id="upload" class="single imagem">
@@ -224,13 +173,13 @@ if ($_POST) {
 												<div class="clear"></div>
 												<div class="thumb">
 													<?php
-														/*$sql = "SELECT imagem1 FROM patrocinadores";
-														$result = mysql_query($sql);
-														$registro = mysql_fetch_assoc($result);
-														$imagem = $registro['imagem1'];*/
+													/*$sql = "SELECT imagem1 FROM fotos";
+													$result = mysql_query($sql);
+													$registro = mysql_fetch_assoc($result);
+													$imagem = $registro['imagem1'];*/
 													?>
 													<?php if($imagem): ?>
-														<img src="<?php echo $url."../media/patrocinadores/".$imagem; ?>" height="100" />
+														<img src="<?php echo $url."../media/fotos/".$imagem; ?>" height="100" />
 													<?php endif; ?>
 												</div>
 
@@ -239,19 +188,6 @@ if ($_POST) {
 											<input type="hidden" name="nome_imagem_bd" id="nome_imagem_bd" value="<?php echo $imagem ?>" />
 											<div class="clear"></div>
 
-											<div id="upload2" class="single imagem2">
-												<a href="javascript:;" id="imagem2" class="plup_button">SELECIONAR IMAGEM</a>
-												<div class="clear"></div>
-												<div class="thumb2">
-													<?php if($imagem2): ?>
-														<img src="<?php echo $url."../media/patrocinadores/".$imagem2; ?>" height="100" />
-													<?php endif; ?>
-												</div>
-											</div>
-											<input type="hidden" name="nome_imagem2" id="nome_imagem2" value="" />
-											<input type="hidden" name="nome_imagem2_bd" id="nome_imagem2_bd" value="<?php echo $imagem2 ?>" />
-											<div class="clear"></div>
-										</td>
 									</tr>
 								</table>
 							</fieldset>

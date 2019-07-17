@@ -48,7 +48,7 @@ $historia = mysql_fetch_array($query);
 				<h2><?php echo date('d/m/Y', strtotime($historia['fundacao'])); ?></h2>
 
 				<p>
-					<?php echo utf8_encode($historia['texto']) ?>
+					<?php echo $historia['texto'] ?>
 				</p>
 
 			</div>

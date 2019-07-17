@@ -34,8 +34,8 @@ function conecta(){
 		mysql_select_db("", $conexao); #teste
 	}
 	if(APPLICATION_ENV=='production'){
-		$conexao = mysql_pconnect("localhost", "", "");
-		mysql_select_db("", $conexao); #producao
+		$conexao = mysql_pconnect("162.241.203.82", "uniaos54_user", "Hexa2018");
+		mysql_select_db("uniaos54_db", $conexao); #producao
 	}
 	return $conexao;
 }

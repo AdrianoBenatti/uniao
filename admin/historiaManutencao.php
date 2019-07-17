@@ -6,11 +6,15 @@ if ($_POST) {
 	}
 	$id = $_GET['id'];
 
+	$titulo = utf8_encode($titulo);
+	$texto = utf8_encode($texto);
+
 	$data = array(
 		"titulo" => $titulo,
 		"fundacao" => $fundacao,
 		"texto" => $texto
 	);
+
 
 
 	if($acao == "Incluir") $id = null;
@@ -111,9 +115,9 @@ if ($_POST) {
 										</td>
 										<td>
 											<input type="text" name="id" id="id" value="<?php echo $id ?>" readonly="readonly" />
-											<input type="text" name="titulo" id="titulo" value="<?php echo $titulo ?>" />
+											<input type="text" name="titulo" id="titulo" value="<?php echo utf8_decode($titulo) ?>" />
 											<input type="date" name="fundacao" id="fundacao" value="<?php echo $fundacao ?>" />
-											<textarea name="texto" id="texto"><?php echo $texto ?></textarea>										</td>
+											<textarea name="texto" id="texto"><?php echo utf8_decode($texto) ?></textarea>										</td>
 									</tr>
 								</table>
 							</fieldset>

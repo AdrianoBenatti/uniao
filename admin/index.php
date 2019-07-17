@@ -34,7 +34,7 @@ if(empty($page)){
 	$_SESSION['logado'] = false;
 
 	if (!empty($_POST)){
-		if (($login == "admin") and ($senha == "apt9630")){
+		if (($login == "admin") and ($senha == "uniao123")){
 			$_SESSION['nome'] = "Admin";
 			$_SESSION['logado'] = true;
 			$_SESSION['id_usuario'] = 0;

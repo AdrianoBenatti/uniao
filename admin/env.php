@@ -1,5 +1,5 @@
 <?php
 
-$env = 'production';
 $env = 'testing';
+$env = 'production';
 $env = 'development';
