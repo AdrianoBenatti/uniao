@@ -7,7 +7,7 @@ if ($_POST) {
 	$id = $_GET['id'];
 
 	$data = array(
-		"nome" => $nome,
+		"nome" => utf8_encode($nome),
 		"posicao" => $posicao
 	);
 
@@ -107,7 +107,7 @@ if ($_POST) {
 										</td>
 										<td>
 											<input type="text" name="id" id="id" value="<?php echo $id ?>" readonly="readonly" />
-											<input type="text" name="nome" id="nome" value="<?php echo $nome ?>" />
+											<input type="text" name="nome" id="nome" value="<?php echo utf8_decode($nome )?>" />
 											<input type="text" name="posicao" id="posicao" value="<?php echo $posicao ?>" />
 										</td>
 									</tr>

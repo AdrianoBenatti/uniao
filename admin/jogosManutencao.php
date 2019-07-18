@@ -51,8 +51,8 @@ if ($_POST) {
 	$data = array(
 		'img_prox' => $nome_imagem,
 		'img_ant' => $nome_imagem2,
-		'txt_ant' => $txt_ant,
-		'txt_prox' => $txt_prox,
+		'txt_ant' => utf8_encode($txt_ant),
+		'txt_prox' => utf8_encode($txt_prox),
 		'data_prox' => $data_prox,
 		'data_ant' => $data_ant
 	);
@@ -114,7 +114,7 @@ if ($_POST) {
 			filters : {
 				max_file_size : '100MB',
 				mime_types: [
-					{title : "Image files", extensions : "jpg,gif,png"}
+					{title : "Image files", extensions : "jpg,gif,png,jpeg"}
 				]
 			},
 			init: {
@@ -143,7 +143,7 @@ if ($_POST) {
 			filters : {
 				max_file_size : '100MB',
 				mime_types: [
-					{title : "Image files", extensions : "jpg,gif,png"}
+					{title : "Image files", extensions : "jpg,gif,png,jpeg"}
 				]
 			},
 			init: {
@@ -221,21 +221,21 @@ if ($_POST) {
 											<div class="clear"></div>
 											<input type="date" name="data_ant" id="data_ant" value="<?php echo $data_ant ?>" />
 											<div class="clear"></div>
-											<textarea name="txt_ant" id="txt_ant"><?php echo $txt_ant ?></textarea>
+											<textarea name="txt_ant" id="txt_ant"><?php echo  utf8_decode($txt_ant) ?></textarea>
 
 
-											<div id="upload" class="single imagem">
-												<a href="javascript:;" id="imagem" class="plup_button">SELECIONAR IMAGEM</a>
+											<div id="upload2" class="single imagem2">
+												<a href="javascript:;" id="imagem2" class="plup_button">SELECIONAR IMAGEM</a>
 												<div class="clear"></div>
-												<div class="thumb">
+												<div class="thumb2">
 													<?php if($img_ant): ?>
 														<img src="<?php echo $url."../media/jogos/".$img_ant; ?>" height="100" />
 													<?php endif; ?>
 												</div>
 
 											</div>
-											<input type="hidden" name="nome_imagem" id="nome_imagem" value="" />
-											<input type="hidden" name="nome_imagem_bd" id="nome_imagem_bd" value="<?php echo $imagem ?>" />
+											<input type="hidden" name="nome_imagem2" id="nome_imagem2" value="" />
+											<input type="hidden" name="nome_imagem2_bd" id="nome_imagem2_bd" value="<?php echo $img_ant ?>" />
 											<div class="clear"></div>
 
 										</td>
@@ -259,20 +259,20 @@ if ($_POST) {
 											<div class="clear"></div>
 											<input type="date" name="data_prox" id="data_prox" value="<?php echo $data_prox ?>" />
 											<div class="clear"></div>
-											<textarea name="txt_prox" id="txt_prox"><?php echo $txt_prox ?></textarea>
+											<textarea name="txt_prox" id="txt_prox"><?php echo utf8_decode($txt_prox) ?></textarea>
 
 
-											<div id="upload2" class="single imagem2">
-												<a href="javascript:;" id="imagem2" class="plup_button">SELECIONAR IMAGEM</a>
+											<div id="upload" class="single imagem">
+												<a href="javascript:;" id="imagem" class="plup_button">SELECIONAR IMAGEM</a>
 												<div class="clear"></div>
-												<div class="thumb2">
+												<div class="thumb">
 													<?php if($img_prox): ?>
 														<img src="<?php echo $url."../media/jogos/".$img_prox; ?>" height="100" />
 													<?php endif; ?>
 												</div>
 											</div>
-											<input type="hidden" name="nome_imagem2" id="nome_imagem2" value="" />
-											<input type="hidden" name="nome_imagem2_bd" id="nome_imagem2_bd" value="<?php echo $imagem2 ?>" />
+											<input type="hidden" name="nome_imagem" id="nome_imagem" value="" />
+											<input type="hidden" name="nome_imagem_bd" id="nome_imagem_bd" value="<?php echo $img_prox ?>" />
 											<div class="clear"></div>
 
 										</td>

@@ -32,7 +32,7 @@ if ($_POST) {
 
 	$data = array(
 		"imagem" => $nome_imagem,
-		"descricao" => $descricao
+		"descricao" => utf8_encode($descricao)
 	);
 
 	if($acao == "Incluir") $id = null;
@@ -78,7 +78,6 @@ if ($_POST) {
 				imagem: "required"
 			},
 			messages: {
-				nome: "Preencha o nome do patrocinador!",
 				imagem: "Selecione a imagem!"
 			}
 		});
@@ -91,7 +90,7 @@ if ($_POST) {
 			filters : {
 				max_file_size : '100MB',
 				mime_types: [
-					{title : "Image files", extensions : "jpg,gif,png"}
+					{title : "Image files", extensions : "jpg,gif,png,jpeg"}
 				]
 			},
 			init: {
@@ -165,7 +164,7 @@ if ($_POST) {
 										<td>
 											<input type="text" name="id" id="id" value="<?php echo $id ?>" readonly="readonly" />
 											<div class="clear"></div>
-											<input type="text" name="descricao" id="descricao" value="<?php echo $descricao ?>" />
+											<input type="text" name="descricao" id="descricao" value="<?php echo utf8_decode($descricao) ?>" />
 											<div class="clear"></div>
 
 											<div id="upload" class="single imagem">

@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44c4bfcb-08d4-4ea2-8c36-1614639b9394" name="Default" comment="Programação admin 10.07.2019">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/fotos.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/fotosManutencao.php" />
+    <list default="true" id="44c4bfcb-08d4-4ea2-8c36-1614639b9394" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/env.php" afterPath="$PROJECT_DIR$/admin/env.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/functions.php" afterPath="$PROJECT_DIR$/admin/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/historia.php" afterPath="$PROJECT_DIR$/admin/historia.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/historiaManutencao.php" afterPath="$PROJECT_DIR$/admin/historiaManutencao.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/fotos.php" afterPath="$PROJECT_DIR$/admin/fotos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/fotosManutencao.php" afterPath="$PROJECT_DIR$/admin/fotosManutencao.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/jogadores.php" afterPath="$PROJECT_DIR$/admin/jogadores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/jogadoresManutencao.php" afterPath="$PROJECT_DIR$/admin/jogadoresManutencao.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/jogosManutencao.php" afterPath="$PROJECT_DIR$/admin/jogosManutencao.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/patrocinadores.php" afterPath="$PROJECT_DIR$/admin/patrocinadores.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/patrocinadoresManutencao.php" afterPath="$PROJECT_DIR$/admin/patrocinadoresManutencao.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/top.php" afterPath="$PROJECT_DIR$/admin/top.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fotos.php" afterPath="$PROJECT_DIR$/fotos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/historia.php" afterPath="$PROJECT_DIR$/historia.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jogadores.php" afterPath="$PROJECT_DIR$/jogadores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/patrocinadores.php" afterPath="$PROJECT_DIR$/patrocinadores.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,51 +28,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="36" column="56" lean-forward="false" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-              <folding>
-                <marker date="1563327764863" expanded="true" signature="1127:1172" ph="SELECT * FRO... usuarios" />
-                <marker date="1563327764863" expanded="true" signature="1590:1643" ph="UPDATE usuar... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="historiaManutencao.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/historiaManutencao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="119" column="100" lean-forward="true" selection-start-line="119" selection-start-column="88" selection-end-line="119" selection-end-column="100" />
-              <folding>
-                <marker date="1563328570884" expanded="true" signature="539:573" ph="SELECT * FRO... historia" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="historia.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/historia.php">
+      <file leaf-file-name="jogadores.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jogadores.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
               <folding>
-                <marker date="1563328651894" expanded="true" signature="486:508" ph="SELECT * FRO... historia" />
+                <marker date="1563415464108" expanded="true" signature="131:154" ph="SELECT * FRO... jogadores" />
+                <marker date="1563415464108" expanded="true" signature="131:170" ph="SELECT * FRO... jogadores" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="historia.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/historia.php">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="45" column="118" lean-forward="false" selection-start-line="45" selection-start-column="118" selection-end-line="45" selection-end-column="118" />
-              <folding>
-                <marker date="1563328444342" expanded="true" signature="60:98" ph="SELECT * FRO... historia" />
-              </folding>
+            <state relative-caret-position="214">
+              <caret line="224" column="58" lean-forward="false" selection-start-line="224" selection-start-column="58" selection-end-line="224" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,8 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$txt_ant</find>
-      <find>$txt_prox</find>
       <find>produtosipiranga</find>
       <find>imagem</find>
       <find>img-prox</find>
@@ -104,7 +74,6 @@
       <find>imagem2</find>
       <find>patrocinadoresManutencao</find>
       <find>$nome_imagem</find>
-      <find>patroci</find>
       <find>jogo-anterior</find>
       <find>Patrocinadores</find>
       <find>Campanhas</find>
@@ -113,6 +82,9 @@
       <find>ap</find>
       <find>apt</find>
       <find>apt9</find>
+      <find>utf8_decode</find>
+      <find>patroci</find>
+      <find>.ultimo-jogo .centraliza</find>
     </findStrings>
     <replaceStrings>
       <replace>nome_imagem2</replace>
@@ -148,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/diretoria.php" />
         <option value="$PROJECT_DIR$/time.php" />
         <option value="$PROJECT_DIR$/../Kit Site/COD NOT FORGET.txt" />
         <option value="$PROJECT_DIR$/css/owl.carousel.css" />
@@ -174,31 +145,32 @@
         <option value="$PROJECT_DIR$/jogadoresManutencao.php" />
         <option value="$PROJECT_DIR$/admin/artilheiros.php" />
         <option value="$PROJECT_DIR$/admin/artilheirosManutencao.php" />
-        <option value="$PROJECT_DIR$/admin/jogadores.php" />
         <option value="$PROJECT_DIR$/admin/usuarios.php" />
         <option value="$PROJECT_DIR$/admin/css/styles.css" />
         <option value="$PROJECT_DIR$/admin/plupload.php" />
-        <option value="$PROJECT_DIR$/admin/patrocinadores.php" />
-        <option value="$PROJECT_DIR$/admin/jogosManutencao.php" />
         <option value="$PROJECT_DIR$/admin/jogos.php" />
         <option value="$PROJECT_DIR$/gols.php" />
-        <option value="$PROJECT_DIR$/jogadores.php" />
         <option value="$PROJECT_DIR$/artilheiros.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin/functions.php" />
         <option value="$PROJECT_DIR$/admin/env.php" />
-        <option value="$PROJECT_DIR$/admin/patrocinadoresManutencao.php" />
         <option value="$PROJECT_DIR$/admin/top.php" />
-        <option value="$PROJECT_DIR$/admin/fotos.php" />
-        <option value="$PROJECT_DIR$/admin/fotosManutencao.php" />
         <option value="$PROJECT_DIR$/fotos.php" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/home.php" />
-        <option value="$PROJECT_DIR$/patrocinadores.php" />
         <option value="$PROJECT_DIR$/admin/index.php" />
         <option value="$PROJECT_DIR$/admin/historia.php" />
         <option value="$PROJECT_DIR$/admin/historiaManutencao.php" />
         <option value="$PROJECT_DIR$/historia.php" />
+        <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/admin/jogosManutencao.php" />
+        <option value="$PROJECT_DIR$/admin/patrocinadoresManutencao.php" />
+        <option value="$PROJECT_DIR$/admin/patrocinadores.php" />
+        <option value="$PROJECT_DIR$/patrocinadores.php" />
+        <option value="$PROJECT_DIR$/admin/fotosManutencao.php" />
+        <option value="$PROJECT_DIR$/admin/fotos.php" />
+        <option value="$PROJECT_DIR$/admin/jogadoresManutencao.php" />
+        <option value="$PROJECT_DIR$/admin/jogadores.php" />
+        <option value="$PROJECT_DIR$/jogadores.php" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
       </list>
     </option>
   </component>
@@ -231,7 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,13 +226,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -418,7 +390,8 @@
       <workItem from="1562279454599" duration="5192000" />
       <workItem from="1562808470373" duration="3319000" />
       <workItem from="1563237137919" duration="4555000" />
-      <workItem from="1563324346863" duration="4368000" />
+      <workItem from="1563324346863" duration="4403000" />
+      <workItem from="1563403587736" duration="6555000" />
     </task>
     <task id="LOCAL-00001" summary="form">
       <created>1549929876657</created>
@@ -602,16 +575,23 @@
       <option name="project" value="LOCAL" />
       <updated>1562811712758</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Site Finalizado.">
+      <created>1563328732718</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1563328732718</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204722000" />
+    <option name="totallyTimeSpent" value="211312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20499243" sideWeight="0.49403748" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20801815" sideWeight="0.49403748" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270869" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -710,18 +690,14 @@
     <MESSAGE value="Programação admin 29.06.2019" />
     <MESSAGE value="Programação admin 04.07.2019" />
     <MESSAGE value="Programação admin 10.07.2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="Programação admin 10.07.2019" />
+    <MESSAGE value="Site Finalizado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Site Finalizado." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/gramado.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/principal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -848,16 +824,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/artilheirosManutencao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="110" column="107" lean-forward="false" selection-start-line="110" selection-start-column="92" selection-end-line="110" selection-end-column="107" />
-          <folding>
-            <marker date="1561327234509" expanded="true" signature="493:530" ph="SELECT * FRO... artilheiros" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/artilheiros.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -913,24 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/jogadoresManutencao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/jogadores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="65" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <marker date="1561513320020" expanded="true" signature="61:100" ph="SELECT * FRO... jogadores" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/ckeditor/ckeditor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -960,30 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/jogos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="47" column="160" lean-forward="false" selection-start-line="47" selection-start-column="160" selection-end-line="47" selection-end-column="160" />
-          <folding>
-            <marker date="1562281185357" expanded="true" signature="57:74" ph="SELECT * FRO... jogadores" />
-            <marker date="1562281185357" expanded="true" signature="57:92" ph="SELECT * FRO... jogos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/jogosManutencao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="230" column="69" lean-forward="false" selection-start-line="230" selection-start-column="69" selection-end-line="230" selection-end-column="69" />
-          <folding>
-            <element signature="e#4920#4924#0#HTML" expanded="false" />
-            <element signature="e#5195#5199#0#HTML" expanded="false" />
-            <element signature="e#6073#6077#0#HTML" expanded="false" />
-            <marker date="1562281113874" expanded="true" signature="1864:1895" ph="SELECT * FRO... jogos" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,16 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogadores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1562810723525" expanded="true" signature="131:171" ph="SELECT * FRO... jogadores" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1052,76 +966,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/imagens.php" />
-    <entry file="file://$PROJECT_DIR$/admin/patrocinadoresManutencao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="185" column="53" lean-forward="false" selection-start-line="185" selection-start-column="53" selection-end-line="185" selection-end-column="53" />
-          <folding>
-            <marker date="1563324872461" expanded="true" signature="1850:1890" ph="SELECT * FRO... patrocinadores" />
-            <marker date="1563324872461" expanded="true" signature="8235:8242" ph="SELECT * FRO... patrocinadores" />
-            <marker date="1563324872461" expanded="true" signature="8235:8269" ph="SELECT image... patrocinadores" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/top.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="61" lean-forward="false" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/patrocinadores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-          <folding>
-            <marker date="1562030512965" expanded="true" signature="66:110" ph="SELECT * FRO... patrocinadores" />
-            <marker date="1562030512965" expanded="true" signature="134:168" ph="SELECT image... patrocinadores" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fotosManutencao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="167" column="57" lean-forward="true" selection-start-line="167" selection-start-column="57" selection-end-line="167" selection-end-column="61" />
-          <folding>
-            <element signature="e#3457#3461#0#HTML" expanded="true" />
-            <element signature="e#3732#3736#0#HTML" expanded="true" />
-            <element signature="e#4610#4614#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#label#2;n#td#0;n#tr#0;n#table#0;n#fieldset#0;n#div#1;n#div#3;n#div#1;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1563326222802" expanded="true" signature="1156:1187" ph="SELECT * FRO... fotos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/fotos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1563325517719" expanded="true" signature="57:92" ph="SELECT * FRO... fotos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fotos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding>
-            <marker date="1563327040965" expanded="true" signature="127:146" ph="SELECT * FRO... fotos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1132,28 +980,6 @@
           <caret line="24" column="105" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="105" />
           <folding>
             <marker date="1562811596327" expanded="true" signature="133:158" ph="SELECT * FRO... artilheiros" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
-          <folding>
-            <marker date="1563327591622" expanded="true" signature="106:125" ph="SELECT * FRO... jogos" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patrocinadores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="60" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="15" selection-end-column="60" />
-          <folding>
-            <marker date="1563327706125" expanded="true" signature="199:227" ph="SELECT * FRO... patrocinadores" />
-            <marker date="1563327706125" expanded="true" signature="199:252" ph="SELECT * FRO... patrocinadores" />
-            <marker date="1563327706125" expanded="true" signature="468:485" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1171,7 +997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="561">
           <caret line="36" column="56" lean-forward="false" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
           <folding>
             <marker date="1563327764863" expanded="true" signature="1127:1172" ph="SELECT * FRO... usuarios" />
@@ -1182,7 +1008,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/historia.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="765">
           <caret line="45" column="118" lean-forward="false" selection-start-line="45" selection-start-column="118" selection-end-line="45" selection-end-column="118" />
           <folding>
             <marker date="1563328444342" expanded="true" signature="60:98" ph="SELECT * FRO... historia" />
@@ -1190,23 +1016,176 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/historia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <marker date="1563328651894" expanded="true" signature="486:508" ph="SELECT * FRO... historia" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/artilheirosManutencao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="110" column="107" lean-forward="false" selection-start-line="110" selection-start-column="92" selection-end-line="110" selection-end-column="107" />
+          <folding>
+            <marker date="1561327234509" expanded="true" signature="493:530" ph="SELECT * FRO... artilheiros" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/historiaManutencao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="119" column="100" lean-forward="true" selection-start-line="119" selection-start-column="88" selection-end-line="119" selection-end-column="100" />
+        <state relative-caret-position="170">
+          <caret line="106" column="38" lean-forward="true" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
           <folding>
             <marker date="1563328570884" expanded="true" signature="539:573" ph="SELECT * FRO... historia" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/historia.php">
+    <entry file="file://$PROJECT_DIR$/admin/lib/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="156" column="22" lean-forward="false" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/jogos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="160" lean-forward="false" selection-start-line="47" selection-start-column="160" selection-end-line="47" selection-end-column="160" />
+          <folding>
+            <marker date="1562281185357" expanded="true" signature="57:74" ph="SELECT * FRO... jogadores" />
+            <marker date="1562281185357" expanded="true" signature="57:92" ph="SELECT * FRO... jogos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+          <folding>
+            <marker date="1563413208969" expanded="true" signature="106:125" ph="SELECT * FRO... jogos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patrocinadores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding>
+            <marker date="1563413931725" expanded="true" signature="199:227" ph="SELECT * FRO... patrocinadores" />
+            <marker date="1563413931725" expanded="true" signature="199:252" ph="SELECT * FRO... patrocinadores" />
+            <marker date="1563413931725" expanded="true" signature="506:523" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/patrocinadoresManutencao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="218" column="110" lean-forward="false" selection-start-line="218" selection-start-column="110" selection-end-line="218" selection-end-column="110" />
+          <folding>
+            <marker date="1563413807603" expanded="true" signature="1863:1903" ph="SELECT * FRO... patrocinadores" />
+            <marker date="1563413807603" expanded="true" signature="8266:8273" ph="SELECT * FRO... patrocinadores" />
+            <marker date="1563413807603" expanded="true" signature="8266:8300" ph="SELECT image... patrocinadores" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/patrocinadores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="50" column="113" lean-forward="false" selection-start-line="50" selection-start-column="113" selection-end-line="50" selection-end-column="113" />
+          <folding>
+            <marker date="1563413815372" expanded="true" signature="66:110" ph="SELECT * FRO... patrocinadores" />
+            <marker date="1563413815372" expanded="true" signature="134:168" ph="SELECT image... patrocinadores" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fotos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="49" column="128" lean-forward="false" selection-start-line="49" selection-start-column="128" selection-end-line="49" selection-end-column="128" />
+          <folding>
+            <marker date="1563414550594" expanded="true" signature="57:92" ph="SELECT * FRO... fotos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fotos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
+          <folding>
+            <marker date="1563327040965" expanded="true" signature="127:146" ph="SELECT * FRO... fotos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/fotosManutencao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="129" column="22" lean-forward="true" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
+          <folding>
+            <marker date="1563414426799" expanded="true" signature="1169:1200" ph="SELECT * FRO... fotos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/jogosManutencao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="274" column="134" lean-forward="false" selection-start-line="274" selection-start-column="134" selection-end-line="274" selection-end-column="134" />
+          <folding>
+            <marker date="1563413378359" expanded="true" signature="1890:1921" ph="SELECT * FRO... jogos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/jogadores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="43" column="114" lean-forward="false" selection-start-line="43" selection-start-column="114" selection-end-line="43" selection-end-column="114" />
+          <folding>
+            <marker date="1563415178746" expanded="true" signature="61:100" ph="SELECT * FRO... jogadores" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/jogadoresManutencao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="109" column="121" lean-forward="false" selection-start-line="109" selection-start-column="121" selection-end-line="109" selection-end-column="121" />
+          <folding>
+            <marker date="1563415112977" expanded="true" signature="462:497" ph="SELECT * FRO... jogadores" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jogadores.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding>
-            <marker date="1563328651894" expanded="true" signature="486:508" ph="SELECT * FRO... historia" />
+            <marker date="1563415464108" expanded="true" signature="131:154" ph="SELECT * FRO... jogadores" />
+            <marker date="1563415464108" expanded="true" signature="131:170" ph="SELECT * FRO... jogadores" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="224" column="58" lean-forward="false" selection-start-line="224" selection-start-column="58" selection-end-line="224" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -50,7 +50,7 @@ if ($_POST) {
 
 
 	$data = array(
-		"nome" => $nome,
+		"nome" => utf8_encode($nome),
 		"imagem" => $nome_imagem,
 		"imagem2" => $nome_imagem2
 	);
@@ -111,7 +111,7 @@ if ($_POST) {
 			filters : {
 				max_file_size : '100MB',
 				mime_types: [
-					{title : "Image files", extensions : "jpg,gif,png"}
+					{title : "Image files", extensions : "jpg,gif,png,jpeg"}
 				]
 			},
 			init: {
@@ -216,7 +216,7 @@ if ($_POST) {
 										<td>
 											<input type="text" name="id" id="id" value="<?php echo $id ?>" readonly="readonly" />
 											<div class="clear"></div>
-											<input type="text" name="nome" id="nome" value="<?php echo $nome ?>" />
+											<input type="text" name="nome" id="nome" value="<?php echo utf8_decode($nome) ?>" />
 											<div class="clear"></div>
 
 											<div id="upload" class="single imagem">

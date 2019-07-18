@@ -41,7 +41,7 @@
 					<tr>
 						<td width="2%" align="center" class="check"><input type="checkbox" name="id[]" value="<?php echo $id ?>" id="id[]" /></td>
 						<td width="2%" align="center" onClick="goTo('<?php echo $altlink ?>');"><?php echo $id ?></td>
-						<td width="50%" align="center" onClick="goTo('<?php echo $altlink ?>');"><?php echo utf8_encode($nome)  ?></td>
+						<td width="50%" align="center" onClick="goTo('<?php echo $altlink ?>');"><?php echo $nome ?></td>
 						<td width="40%" align="center" onClick="goTo('<?php echo $altlink ?>');"><?php echo $posicao ?></td>
 						<td width="6%" align="center"><a href="<?php echo $altlink ?>" title="Alterar"><img src="images/alterar.png" alt="Alterar" /></a></td>
 					</tr>
