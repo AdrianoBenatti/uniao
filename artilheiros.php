@@ -2,7 +2,7 @@
 $title = "Artilheiros - ";
 $id = anti_sql_injection($_GET['id']) ? anti_sql_injection($_GET['id']) : 1;
 
-$query = mysql_query("SELECT * FROM artilheiros") or die (mysql_error());
+$query = mysql_query("SELECT * FROM artilheiros order by id") or die (mysql_error());
 
 ?>
 

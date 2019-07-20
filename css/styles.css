@@ -114,7 +114,7 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 .ultimo-jogo .artilharia .dados .parte1 .jogador .number  { font-size: 16px; color: #EF580F; font-weight: bold; }
 .ultimo-jogo .artilharia .dados .parte2 .jogador .number  { font-size: 16px; color: #EF580F; font-weight: bold; margin: 0 30px;}
 
-.ultimo-jogo .jogadores { border-radius: 10px; width: 600px; padding: 100px 65px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 700px; text-align: justify; margin: 0 auto; opacity: 0.8;}
+.ultimo-jogo .jogadores { border-radius: 10px; width: 600px; padding: 100px 65px; background-color: #e1a15c; border: 2px solid #fb7f36; height: auto; text-align: justify; margin: 0 auto; opacity: 0.8;}
 .ultimo-jogo .jogadores span { font-size: 30px; font-weight: bold; color: #ff4400; text-align: center;}
 .ultimo-jogo .jogadores p { font-size: 20px; color: #ff4400; font-weight: bold; margin: 20px 30px;}
 
@@ -170,13 +170,13 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.banner-mobile { background: url("../images/banner-mobile.jpg")top center no-repeat; background-size: cover; width: 100%; height: 250px; display: block; border-bottom: 6px solid #fb7f36;}
 
 	.ultimo-jogo .centraliza { width: 100%; flex-wrap: wrap; flex-direction: column; padding: 30px;}
-	.ultimo-jogo .centraliza .jogo-anterior img { width: 202%; height: 250px;}
-	.ultimo-jogo .centraliza .prox-jogo img { width: 100%}
+	.ultimo-jogo .centraliza .jogo-anterior img { width: 100%; height: auto;}
+	.ultimo-jogo .centraliza .prox-jogo img { width: 100%; height: auto;}
 	.ultimo-jogo .centraliza .images #aux-images { margin: 0 0 80px;}
 
 	.home .ultimo-jogo { width: 100%; height: auto;}
 	.ultimo-jogo .centraliza .jogo-anterior h2 { font-size: 20px; height: 100px; padding: 6px 43px; width: 250px;}
-	.ultimo-jogo .centraliza .prox-jogo h2 { font-size: 19px; height: 70px; padding: 6px 43px;}
+	.ultimo-jogo .centraliza .prox-jogo h2 { font-size: 19px; height: auto; padding: 5px; width: 170px; }
 	.ultimo-jogo .centraliza .prox-jogo p { font-size: 15px;  height: auto; padding: 5px 11px;}
 	.ultimo-jogo .centraliza .jogo-anterior p { font-size: 15px; height: auto; padding: 5px 11px; width: 250px; }
 
@@ -195,9 +195,9 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.home .ultimo-jogo .patrocinadores .centraliza .jogo-anterior { flex-direction: column; width: 100%;}
 
 
-	.ultimo-jogo .jogadores { border-radius: 10px; width: 100%; padding: 100px 65px; background-color: #e1a15c; border: 2px solid #fb7f36; height: 950px; text-align: justify; margin: 0 auto; opacity: 0.8;}
+	.ultimo-jogo .jogadores { border-radius: 10px; width: 100%; padding: 100px 0; background-color: #e1a15c; border: 2px solid #fb7f36; height: 950px; text-align: justify; margin: 0 auto; opacity: 0.8;}
 	.ultimo-jogo .jogadores span { font-size: 30px; font-weight: bold; color: #ff4400; text-align: center;}
-	.ultimo-jogo .jogadores p { font-size: 20px; color: #EF580F; font-weight: bold; margin: 0 30px;}
+	.ultimo-jogo .jogadores p { font-size: 18px; color: #EF580F; font-weight: bold; margin: 0 30px 10px;}
 
 	.wrap-fotos h2 { font-size: 24px; height: 38px; margin: 10px 0; }
 
@@ -222,16 +222,21 @@ h1,h2,h3,h4,h5,h6 {font-weight:300;}
 	.ultimo-jogo .form #fContato input[type=submit] { margin: 0 auto;}
 
 	.ultimo-jogo .images { width: 100%; padding: 0 0 70px;}
-	.ultimo-jogo .images img { width: 100%; height: 200px;}
+	.ultimo-jogo .images img { width: 100%; height: auto; margin: 15px 0 0 0; max-height: 200px;}
 	.ultimo-jogo .centraliza .wrap-fotos { padding: 160px 0;}
 
 	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio { padding: 40px; text-align: center; margin: 0 auto; width: 100%; justify-content: space-between; display: block;}
 	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio figure { display: flex; flex-wrap: wrap;}
-	.home .ultimo-jogo .patrocinadores .centraliza .jogo-anterior figure img { width: 100%; height: 300px;}
+	.home .ultimo-jogo .patrocinadores .centraliza .jogo-anterior figure img { width: 100%; height: auto;}
 	.home .ultimo-jogo .patrocinadores .centraliza.patrocinio.primeiro { padding: 150px 0 0 0; width: 100%;}
 	.home .ultimo-jogo .patrocinadores h2 { height: auto; font-size: 30px; background: #e1a15c; color: #ff4400; border-radius: 10px; opacity: 0.8; padding: 0 40px;}
 
 	.ultimo-jogo .centraliza .wrap-carousel .seta.seta_esq { left: -6%;}
+
+	.ultimo-jogo .centraliza .prox-jogo { width: 100%;}
+	.ultimo-jogo .centraliza .jogo-anterior { width: 100%; }
+	.ultimo-jogo .centraliza .images { text-align: center; }
+	.ultimo-jogo .images p { margin: 0;}
 
 
 }

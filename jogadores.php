@@ -12,7 +12,7 @@ $j = mysql_fetch_array($query)
 
 
 		<?php while ($j = mysql_fetch_array($query)): ?>
-				<?php echo "<p><b>Nome Jogador:</b> " . $j['nome'] . " - " . $j['posicao'] . "</p>" ?>
+				<?php echo "<p><b>Jogador:</b> " . $j['nome'] . " - " . $j['posicao'] . "</p>" ?>
 		<?php endwhile; ?>
 
 
